@@ -35,17 +35,32 @@ const serviceData = [
                     { title: "UBILL IBM", desc: "Integrated Billing Module for multi-utility tariffs (water, electricity, gas, chilled water, hot water), prepaid metering, tenant management, invoice generation, and payment portal." },
                     { title: "UBILL VCM", desc: "Valve Control Management system to remotely operate smart M-Bus/LoRaWAN shutoff valves via cloud dashboard for disconnection/reconnection management." }
                 ],
-                features: [
-                    "Multi-utility billing (Water, Electricity, Gas, BTU, Chilled Water)",
-                    "Automated meter reading via M-Bus, LoRaWAN, NB-IoT, Modbus",
-                    "Prepaid and postpaid metering support",
-                    "Tenant management and invoice generation",
-                    "Remote valve control for disconnection/reconnection",
-                    "Real-time consumption monitoring and alerts",
-                    "Payment portal and collection management",
-                    "BMS integration via BACnet IP and Modbus"
+                brochure: "../files/Brochure.pdf",
+                offerings: [
+                    "UTILITY BILLING – INTEGRATED BILLING MODULE (IBM) - Standalone",
+                    "UTILITY BILLING AS MANAGED SERVICE",
+                    "CENTRALISED MDMS – METER DATA MANAGEMENT SERVICE",
+                    "CONNECTED BUILDINGS – AUTOMATED METER READINGS (AMR)",
+                    "PREPAID BILLING SERVICES"
                 ],
-                brochure: "../files/Brochure.pdf"
+                solutionsFor: [
+                    "PROPERTY MANAGEMENT COMPANIES",
+                    "COMMUNITY MANAGEMENT",
+                    "OWNERS ASSOCIATION",
+                    "DEVELOPERS",
+                    "WATER DISTRIBUTION COMPANIES"
+                ],
+                features: [
+                    "Customer Management",
+                    "Meter management",
+                    "Automated Meter Reading",
+                    "Bill generation",
+                    "Receipts & collection management",
+                    "Track, control, monitor & recording of Billing data",
+                    "Monthly MIS reports / Account Management",
+                    "Pre-paid billing management",
+                    "Integration API to finance ERP - Oracle / SAP / AX-dynamics ..."
+                ]
             },
             {
                 id: "network-security",

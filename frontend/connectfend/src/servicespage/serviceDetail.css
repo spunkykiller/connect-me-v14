@@ -207,3 +207,72 @@
     font-size: 18px;
     flex-shrink: 0;
 }
+
+/* ======================================================
+   OFFERINGS SECTION
+===================================================== */
+.offerings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.offering-item {
+    background: linear-gradient(90deg, #0f2c4a 0%, #1a4b7c 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.offering-item:hover {
+    transform: translateX(5px);
+}
+
+/* ======================================================
+   SOLUTIONS FOR SECTION
+===================================================== */
+.solutions-for-section {
+    background: #0f4c75;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.solutions-for-section .section-title {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.solutions-for-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.solutions-for-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.solutions-for-list li::before {
+    content: "•";
+    color: #4db8ff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.solutions-for-list li:last-child {
+    border-bottom: none;
+}
