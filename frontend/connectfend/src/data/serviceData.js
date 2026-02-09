@@ -26,6 +26,10 @@ import img92 from "../utilitybillingmetering/img92.jpg";
 import img93 from "../utilitybillingmetering/img93.jpg";
 import img94 from "../utilitybillingmetering/img94.jpg";
 
+// Component Images
+import wiredLeakSensor from "../assets/wired_leak_sensor.png";
+import edgeGateway from "../assets/edge_gateway.png";
+
 const serviceData = [
     {
         category: "Solutions",
@@ -188,7 +192,8 @@ const serviceData = [
                     },
                     {
                         title: "2. 🔧 Wired Leak Detection System",
-                        desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies."
+                        desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies.",
+                        img: wiredLeakSensor
                     },
                     {
                         title: "3. 🔹 Location-Based Leak Detection (5-Wire Rope Cable)",
@@ -227,7 +232,8 @@ const serviceData = [
                     },
                     {
                         title: "5. 🌐 Integrated Monitoring via UCONNECT EDGE Gateway",
-                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
+                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration.",
+                        img: edgeGateway
                     },
                     {
                         title: "6. 🔔 Multi-Level Alert & Notification System",
