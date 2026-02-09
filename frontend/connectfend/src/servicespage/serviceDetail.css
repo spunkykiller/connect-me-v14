@@ -81,7 +81,7 @@
 }
 
 .monitor-param {
-    font-size: 18px;
+    font-size: var(--font-h4);
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -134,7 +134,7 @@
 }
 
 .how-title {
-    font-size: 16px;
+    font-size: var(--font-h4);
     font-weight: 700;
     color: #222;
     margin-bottom: 6px;
@@ -175,7 +175,7 @@
 }
 
 .where-location {
-    font-size: 16px;
+    font-size: var(--font-h4);
     font-weight: 700;
     color: #26AAE3;
     margin-bottom: 8px;
@@ -336,7 +336,7 @@
 }
 
 .sub-item-list-title {
-    font-size: 14px;
+    font-size: var(--font-body);
     font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 8px;
@@ -370,7 +370,7 @@
 }
 
 .alert-type {
-    font-size: 13px;
+    font-size: var(--font-body-sm);
     font-weight: 700;
     color: #333;
     margin-bottom: 4px;
