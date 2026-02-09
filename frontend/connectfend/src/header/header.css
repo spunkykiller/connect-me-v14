@@ -66,14 +66,14 @@ body {
   font-size: var(--font-body);
   font-weight: 600;
   text-decoration: none;
-  color: var(--color-primary);
-  transition: 0.2s ease;
+  color: var(--color-text-main);
+  transition: var(--transition-base);
   cursor: pointer;
 }
 
 .desktop-nav a:hover,
 .nav-link:hover {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 /* =============================
@@ -81,18 +81,18 @@ body {
 ============================= */
 .contact-btn {
   background: var(--color-primary);
-  color: var(--color-text-dark);
+  color: var(--color-bg-white);
   padding: 10px 25px;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
-  font-size: var(--font-h4);
-  font-weight: 500;
-  transition: 0.2s ease;
+  font-size: var(--font-body-sm);
+  font-weight: 600;
+  transition: var(--transition-base);
 }
 
 .contact-btn:hover {
-  background: var(--color-text-dark);
-  color: var(--color-primary);
+  background: var(--color-secondary);
+  color: var(--color-bg-white);
 }
 
 /* =============================

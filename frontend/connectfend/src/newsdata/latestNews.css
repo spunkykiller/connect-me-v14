@@ -3,7 +3,7 @@
 .news-section {
   width: 100%;
   padding: var(--spacing-section) 0;
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
 }
 
 .news-title {

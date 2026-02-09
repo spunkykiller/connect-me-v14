@@ -115,9 +115,9 @@
 
 /* TEXT CONTENT */
 .testimonial-text {
-  font-size: 23px;
-  line-height: 1.4;
-  color: #333;
+  font-size: var(--font-body);
+  line-height: var(--lh-base);
+  color: var(--color-text-body);
   margin-bottom: 35px;
 }
 

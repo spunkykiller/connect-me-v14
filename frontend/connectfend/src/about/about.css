@@ -316,6 +316,26 @@
   margin-bottom: 12px;
 }
 
+.about-title {
+  font-size: var(--font-h1);
+  color: var(--color-text-main);
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-size: var(--font-h4);
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.about-text p {
+  font-size: var(--font-body);
+  color: var(--color-text-body);
+  line-height: var(--lh-base);
+  margin-bottom: 20px;
+}
+
 /* ===========================
    RESPONSIVE MOBILE STYLES
    =========================== */

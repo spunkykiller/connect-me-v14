@@ -13,12 +13,12 @@
 }
 
 .footer {
-  background-color: var(--footer-bg);
-  color: var(--footer-text);
-  font-family: 'Inter', sans-serif;
-  padding: 60px 40px;
-  font-size: 14px;
-  line-height: 1.6;
+  background-color: var(--color-secondary);
+  color: var(--color-text-muted);
+  font-family: var(--font-main);
+  padding: 60px var(--spacing-container);
+  font-size: var(--font-caption);
+  line-height: var(--lh-base);
 }
 
 .footer-container {

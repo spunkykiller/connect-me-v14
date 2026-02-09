@@ -5,9 +5,9 @@
 =================================================== */
 
 .projects-section {
-  padding: 80px 0 40px;
+  padding: var(--spacing-section) 0 calc(var(--spacing-section) / 2);
   /* Increased top padding to clear sticky tabs */
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
   text-align: center;
   scroll-margin-top: 140px;
   /* Smooth scroll offset */
@@ -47,9 +47,9 @@
 }
 
 .projects-title {
-  font-size: 48px;
+  font-size: var(--font-h1);
   font-weight: 700;
-  color: #1a365d;
+  color: var(--color-text-main);
   margin-bottom: 40px;
   margin-top: 20px;
 }
@@ -163,9 +163,9 @@
 }
 
 .clients-title {
-  font-size: 48px;
+  font-size: var(--font-h1);
   font-weight: 700;
-  color: #1a365d;
+  color: var(--color-text-main);
   margin-bottom: 50px;
 }
 

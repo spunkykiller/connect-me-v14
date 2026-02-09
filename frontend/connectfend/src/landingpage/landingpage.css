@@ -44,11 +44,11 @@
 }
 
 .hero-title {
-  font-family: 'Oxygen', sans-serif;
-  font-size: var(--font-big);
+  font-family: var(--font-main);
+  font-size: var(--font-hero);
   font-weight: 700;
-  line-height: 1.1;
-  color: #1a1a1a;
+  line-height: var(--lh-tight);
+  color: var(--color-text-main);
   margin-bottom: 1.5rem;
 }
 
@@ -62,9 +62,9 @@
 }
 
 .hero-subtitle {
-  font-family: 'Oxygen', sans-serif;
+  font-family: var(--font-main);
   font-size: var(--font-h4);
-  line-height: var(--lh-normal);
+  line-height: var(--lh-base);
   color: var(--color-text-muted);
   margin-bottom: 2.5rem;
   max-width: 90%;

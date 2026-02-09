@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 .pd-page {
-  font-family: "Oxygen", sans-serif;
+  font-family: var(--font-main);
   color: var(--color-text-body);
-  max-width: 1400px;
+  max-width: var(--container-max);
   margin: 0 auto;
-  padding: var(--spacing-section-mobile) 5%;
+  padding: var(--spacing-section) 5%;
 }
 
 .pd-not-found {
@@ -45,18 +45,18 @@
 }
 
 .pd-title {
-  font-size: var(--font-h2);
+  font-size: var(--font-h1);
   font-weight: 700;
   line-height: var(--lh-tight);
-  color: var(--color-text-body);
+  color: var(--color-text-main);
   margin-bottom: 20px;
 }
 
 .pd-tagline {
-  font-size: var(--font-h4);
-  color: var(--color-text-muted);
+  font-size: var(--font-h3);
+  color: var(--color-primary);
   margin-bottom: 20px;
-  line-height: var(--lh-normal);
+  line-height: var(--lh-tight);
 }
 
 .pd-overview {
@@ -852,16 +852,19 @@
     margin-right: auto;
   }
 }
+
 /* TOSI OVERLAY ICON */
 .pd-hero-image {
-  position: relative; /* Ensure container is relative for absolute positioning */
+  position: relative;
+  /* Ensure container is relative for absolute positioning */
 }
 
 .tosi-hero-overlay {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 50px; /* Adjust size as needed */
+  width: 50px;
+  /* Adjust size as needed */
   height: auto;
   z-index: 10;
   pointer-events: none;
@@ -874,4 +877,3 @@
     right: 5px;
   }
 }
-
