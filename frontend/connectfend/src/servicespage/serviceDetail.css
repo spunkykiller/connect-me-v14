@@ -313,6 +313,73 @@
     transform: scale(1.2);
 }
 
+transform: scale(1.2);
+}
+
+/* ======================================================
+   SUB ITEMS LISTS (Leak Detection)
+===================================================== */
+.sub-item-list-container {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.sub-item-list-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.sub-item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-item-list li {
+    font-size: 13px;
+    color: #555;
+    padding: 4px 0;
+    padding-left: 15px;
+    position: relative;
+}
+
+.sub-item-list li::before {
+    content: "•";
+    color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.alert-group {
+    margin-bottom: 12px;
+}
+
+.alert-type {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+/* ======================================================
+   CONCLUSION SECTION
+===================================================== */
+.conclusion-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color-text-body);
+    font-weight: 500;
+    background: #f0f9ff;
+    padding: 25px;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 8px;
+}
+
 /* ======================================================
    OFFERINGS SECTION
 ===================================================== */

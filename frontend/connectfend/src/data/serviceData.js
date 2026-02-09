@@ -174,23 +174,82 @@ const serviceData = [
                     "With both wireless and wired leak detection technologies, ConnectME delivers flexible and scalable solutions for every infrastructure requirement."
                 ],
                 subItems: [
-                    { title: "Wireless Zone Leak Sensor", desc: "LoRaWAN area-based leak detector with 2-10 meter extendable sensing cable, battery powered (5+ years), monitoring leak detection, temperature, humidity, and battery status." },
-                    { title: "Wireless Point Leak Sensor", desc: "Compact spot leak detector for drip trays and specific risk points, fully wireless LoRaWAN connectivity, instant alerts, ideal for under-sink and equipment monitoring." },
-                    { title: "Wired Leak Sensors", desc: "Reliable wired zone and point leak sensors for integration with traditional BMS panels, suitable for permanent installations in mechanical rooms and critical infrastructure." },
-                    { title: "LoRa Gateway & Cloud", desc: "LoRaWAN gateway collects data from multiple sensors, forwards to UConnect Cloud platform via 4G/Wi-Fi, generates alerts and sends notifications through WhatsApp API." }
+                    {
+                        title: "1. 🔹 Wireless Leak Detection System (LoRaWAN-Based)",
+                        desc: "ConnectME’s wireless leak detection solution is built on LoRaWAN-enabled battery-powered sensors with rope-type sensing cables. These sensors are deployed across critical areas such as basements, pump rooms, HVAC zones, and pipe networks. When water comes in contact with the rope, the sensor instantly detects moisture and transmits the alert through a private LoRaWAN network to the UCONNECT EDGE gateway.",
+                        keyFeatures: [
+                            "Battery-operated wireless sensors",
+                            "Long-range LoRaWAN communication",
+                            "Rope-type leak sensing cable",
+                            "Private LoRaWAN infrastructure",
+                            "Low maintenance and easy deployment",
+                            "Ideal for retrofit installations"
+                        ]
+                    },
+                    {
+                        title: "2. 🔧 Wired Leak Detection System",
+                        desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies."
+                    },
+                    {
+                        title: "3. 🔹 Location-Based Leak Detection (5-Wire Rope Cable)",
+                        desc: "This advanced system uses a 5-wire sensing cable (Two sensing wires, One reference wire, Power wires, Communication wires). When water touches the cable, resistance changes between the sensing wires. The controller analyzes this variation to calculate the exact distance of the leak.",
+                        technicalHighlights: [
+                            "MODBUS RS485 communication interface",
+                            "Real-time leak distance reporting",
+                            "Location accuracy up to ±1 meter",
+                            "Extendable cable segments (5 m / 7.5 m)",
+                            "Maximum extension up to 50 meters"
+                        ],
+                        keyBenefits: [
+                            "Precise leak localization",
+                            "Cable break and damage detection",
+                            "Reusable after drying",
+                            "Suitable for long cable routes",
+                            "Ideal for data centers, HVAC rooms, and basements"
+                        ]
+                    },
+                    {
+                        title: "4. 🔹 Non-Location Leak Detection (2-Wire Rope Cable)",
+                        desc: "This system detects water presence in a defined zone without pinpointing the exact location. It uses a 2-wire rope cable connected to a controller that provides NO/NC dry contact outputs when water is detected.",
+                        technicalHighlights: [
+                            "Zone-based leak detection",
+                            "NO/NC relay outputs",
+                            "Cable extension up to 250 meters",
+                            "Standard cable lengths: 5 m and 10 m",
+                            "Plug-and-play extensions"
+                        ],
+                        keyBenefits: [
+                            "Cost-effective solution",
+                            "Simple installation",
+                            "Reliable zone monitoring",
+                            "Suitable for plant rooms and pipe corridors"
+                        ]
+                    },
+                    {
+                        title: "5. 🌐 Integrated Monitoring via UCONNECT EDGE Gateway",
+                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
+                    },
+                    {
+                        title: "6. 🔔 Multi-Level Alert & Notification System",
+                        desc: "From the UCONNECT EDGE gateway, alerts are delivered through multiple channels:",
+                        multiLevelAlerts: [
+                            { type: "1️⃣ Local Alarm System", points: ["Hooter and siren alerts", "Reset and acknowledgment support", "Immediate on-site indication"] },
+                            { type: "2️⃣ BMS / SCADA Integration", points: ["BACnet & Modbus communication", "Seamless connection to building management systems", "Centralized monitoring"] },
+                            { type: "3️⃣ Cloud Platform Monitoring", points: ["Real-time dashboards", "Historical data storage", "Performance analytics", "Automated reporting"] },
+                            { type: "4️⃣ Mobile Notifications", points: ["WhatsApp alerts", "SMS notifications", "Email reports", "Direct alerts to FM and maintenance teams"] }
+                        ]
+                    }
                 ],
                 features: [
-                    "Wireless LoRaWAN connectivity (no wiring required)",
-                    "Zone detection with 2-10 meter sensing cables",
-                    "Point detection for specific risk areas",
-                    "Battery powered (5+ year battery life)",
-                    "Real-time leak, temperature, humidity monitoring",
-                    "Instant WhatsApp and email alerts",
-                    "Cloud-based monitoring dashboard",
-                    "Multi-sensor management (100+ sensors per gateway)",
-                    "Historical event logging",
-                    "Integration with BMS systems"
+                    "Early leak detection and prevention",
+                    "Reduced asset damage",
+                    "Lower maintenance costs",
+                    "Improved operational reliability",
+                    "Faster fault response",
+                    "Enhanced safety",
+                    "Long-term infrastructure protection"
                 ],
+                conclusion: "ConnectME’s Smart Water Leak Detection Solution provides a complete, reliable, and scalable platform for protecting critical infrastructure from water-related risks. By combining advanced sensing technologies, intelligent gateways, cloud analytics, and instant notifications, we empower facility managers to proactively safeguard their assets and operations.",
                 applications: [
                     "Server rooms and data centers",
                     "Mechanical and electrical rooms",

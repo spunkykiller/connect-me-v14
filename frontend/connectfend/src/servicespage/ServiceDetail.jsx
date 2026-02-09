@@ -206,6 +206,58 @@ export default function ServiceDetail() {
                                 <div key={i} className="sub-item-card">
                                     <h3 className="sub-item-title">{sub.title}</h3>
                                     <p className="sub-item-desc">{sub.desc}</p>
+
+                                    {/* Nested keyFeatures */}
+                                    {sub.keyFeatures && (
+                                        <div className="sub-item-list-container">
+                                            <h4 className="sub-item-list-title">Key Features</h4>
+                                            <ul className="sub-item-list">
+                                                {sub.keyFeatures.map((kf, k) => (
+                                                    <li key={k}>{kf}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {/* Nested technicalHighlights */}
+                                    {sub.technicalHighlights && (
+                                        <div className="sub-item-list-container">
+                                            <h4 className="sub-item-list-title">Technical Highlights</h4>
+                                            <ul className="sub-item-list">
+                                                {sub.technicalHighlights.map((th, k) => (
+                                                    <li key={k}>{th}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {/* Nested keyBenefits */}
+                                    {sub.keyBenefits && (
+                                        <div className="sub-item-list-container">
+                                            <h4 className="sub-item-list-title">Key Benefits</h4>
+                                            <ul className="sub-item-list">
+                                                {sub.keyBenefits.map((kb, k) => (
+                                                    <li key={k}>{kb}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {/* Nested multiLevelAlerts */}
+                                    {sub.multiLevelAlerts && (
+                                        <div className="sub-item-list-container">
+                                            {sub.multiLevelAlerts.map((alert, k) => (
+                                                <div key={k} className="alert-group">
+                                                    <h5 className="alert-type">{alert.type}</h5>
+                                                    <ul className="sub-item-list">
+                                                        {alert.points.map((pt, p) => (
+                                                            <li key={p}>{pt}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -314,6 +366,14 @@ export default function ServiceDetail() {
                     <div className="service-partners">
                         <p><strong>Note:</strong> {service.partners}</p>
                     </div>
+                )}
+
+                {/* CONCLUSION SECTION */}
+                {service.conclusion && (
+                    <section className="pd-section conclusion-section">
+                        <h2 className="section-title">Conclusion</h2>
+                        <p className="conclusion-text">{service.conclusion}</p>
+                    </section>
                 )}
 
             </div>
