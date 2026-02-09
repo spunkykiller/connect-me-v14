@@ -44,6 +44,8 @@
 
   --color-bg-white: #ffffff;
   --color-bg-light: #f8fafc;
+  --color-bg: #ffffff;
+  /* v12 compatibility */
   --color-border: #e2e8f0;
 
   /* ===========================

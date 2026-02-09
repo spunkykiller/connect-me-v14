@@ -81,7 +81,7 @@ body {
 ============================= */
 .contact-btn {
   background: var(--color-primary);
-  color: var(--color-text-main);
+  color: var(--color-text-dark);
   padding: 10px 25px;
   border-radius: 10px;
   text-decoration: none;
@@ -91,7 +91,7 @@ body {
 }
 
 .contact-btn:hover {
-  background: var(--color-text-main);
+  background: var(--color-text-dark);
   color: var(--color-primary);
 }
 
@@ -355,7 +355,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 16px 20px;
-    font-size: var(--font-body);
+    font-size: 18px;
+    /* Larger font for main items */
     font-weight: 600;
     color: #333;
     text-decoration: none;
@@ -406,8 +407,7 @@ body {
     margin: 0;
     padding: 20px 20px 10px 35px;
     /* Indented header */
-    font-size: var(--font-body-sm);
-    /* 16px */
+    font-size: 17px;
     font-weight: 800;
     /* Extra bold */
     color: #111;
@@ -420,8 +420,7 @@ body {
     display: block;
     padding: 12px 20px 12px 35px;
     /* Indented items */
-    font-size: var(--font-body-sm);
-    /* 16px - Standardized from 15px */
+    font-size: 15px;
     font-weight: 400;
     color: #4a5568;
     text-decoration: none;
