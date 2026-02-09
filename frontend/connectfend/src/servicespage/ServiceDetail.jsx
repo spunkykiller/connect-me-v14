@@ -118,6 +118,18 @@ export default function ServiceDetail() {
             {/* MAIN CONTENT AREA */}
             <div className="pd-content">
 
+                {/* OVERVIEW CONTENT */}
+                {service.content && (
+                    <section className="pd-section">
+                        <h2 className="section-title">Overview</h2>
+                        <div className="service-text-block">
+                            {service.content.map((para, i) => (
+                                <p key={i}>{para}</p>
+                            ))}
+                        </div>
+                    </section>
+                )}
+
                 {/* OFFERINGS SECTION (Utility Billing specific) */}
                 {service.offerings && (
                     <section className="pd-section offerings-section">
@@ -141,18 +153,6 @@ export default function ServiceDetail() {
                                 <li key={i}>{sol}</li>
                             ))}
                         </ul>
-                    </section>
-                )}
-
-                {/* OVERVIEW CONTENT */}
-                {service.content && (
-                    <section className="pd-section">
-                        <h2 className="section-title">Overview</h2>
-                        <div className="service-text-block">
-                            {service.content.map((para, i) => (
-                                <p key={i}>{para}</p>
-                            ))}
-                        </div>
                     </section>
                 )}
 

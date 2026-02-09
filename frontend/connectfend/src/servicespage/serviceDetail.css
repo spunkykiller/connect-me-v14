@@ -381,6 +381,7 @@ transform: scale(1.2);
 }
 
 /* ======================================================
+/* ======================================================
    OFFERINGS SECTION
 ===================================================== */
 .offerings-list {
@@ -391,36 +392,59 @@ transform: scale(1.2);
 }
 
 .offering-item {
-    background: linear-gradient(90deg, #0f2c4a 0%, #1a4b7c 100%);
-    color: white;
+    background: #fff;
+    color: var(--color-text-body);
     padding: 15px 20px;
     border-radius: 6px;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* Lighter shadow */
+    border: 1px solid #eee;
+    /* Light border */
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    padding-left: 40px;
+    /* Space for icon/bullet */
+}
+
+.offering-item::before {
+    content: "✔";
+    /* OR use a specific icon font if available */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-primary);
+    font-size: 18px;
 }
 
 .offering-item:hover {
     transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
 }
 
 /* ======================================================
    SOLUTIONS FOR SECTION
 ===================================================== */
 .solutions-for-section {
-    background: #0f4c75;
-    padding: 30px;
-    border-radius: 10px;
-    color: white;
+    background: transparent;
+    /* Removed blue background */
+    padding: 0;
+    /* Removed padding */
+    border-radius: 0;
+    color: var(--color-text-body);
     margin-bottom: 30px;
 }
 
 .solutions-for-section .section-title {
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 15px;
+    color: var(--color-text-heading);
+    /* Default heading color */
+    border-bottom: none;
+    /* Removed border */
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
@@ -432,17 +456,20 @@ transform: scale(1.2);
 
 .solutions-for-list li {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #eee;
+    /* Light border */
     font-weight: 500;
     display: flex;
     align-items: center;
+    color: var(--color-text-body);
 }
 
 .solutions-for-list li::before {
     content: "•";
-    color: #4db8ff;
+    color: var(--color-primary);
+    /* Primary color bullet */
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .solutions-for-list li:last-child {
