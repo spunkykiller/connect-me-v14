@@ -9,8 +9,8 @@
   /* Increased top padding to clear sticky tabs */
   font-family: var(--font-main);
   text-align: center;
-  scroll-margin-top: 140px;
-  /* Smooth scroll offset */
+  scroll-margin-top: 70px;
+  /* Smooth scroll offset - adjusted for sticky header ONLY */
 }
 
 /* TABS NAVIGATION */
@@ -20,10 +20,6 @@
   gap: 20px;
   padding: 20px 0;
   background: #fff;
-  position: sticky;
-  top: 70px;
-  /* Adjust based on header height */
-  z-index: 900;
   border-bottom: 1px solid #f0f0f0;
   margin-bottom: 30px;
   /* Spacer below tabs */
@@ -159,7 +155,7 @@
   padding: 60px 0 80px;
   text-align: center;
   background: #f8fafc;
-  scroll-margin-top: 140px;
+  scroll-margin-top: 70px;
 }
 
 .clients-title {
