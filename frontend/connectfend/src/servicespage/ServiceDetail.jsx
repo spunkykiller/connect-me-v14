@@ -10,10 +10,36 @@ export default function ServiceDetail() {
     const [service, setService] = useState(null);
     const [breadcrumbs, setBreadcrumbs] = useState([]);
 
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [dashboardIndex, setDashboardIndex] = useState(0);
+
     useEffect(() => {
         // Find Service
         let foundService = null;
         let foundCat = null;
+        // ... (existing code)
+
+        // Dashboard Carousel Logic
+        useEffect(() => {
+            if (service && service.softwareDashboard && service.softwareDashboard.length > 1) {
+                const interval = setInterval(() => {
+                    setDashboardIndex((prev) => (prev + 1) % service.softwareDashboard.length);
+                }, 5000);
+                return () => clearInterval(interval);
+            }
+        }, [service]);
+
+        const nextDashboard = () => {
+            if (service && service.softwareDashboard) {
+                setDashboardIndex((prev) => (prev + 1) % service.softwareDashboard.length);
+            }
+        };
+
+        const prevDashboard = () => {
+            if (service && service.softwareDashboard) {
+                setDashboardIndex((prev) => (prev - 1 + service.softwareDashboard.length) % service.softwareDashboard.length);
+            }
+        };
 
         if (serviceId) {
             foundCat = serviceData.find(c => c.slug === category);
@@ -30,6 +56,16 @@ export default function ServiceDetail() {
             ]);
         }
     }, [category, serviceId]);
+
+    // Carousel Logic
+    useEffect(() => {
+        if (service && service.heroImages && service.heroImages.length > 1) {
+            const interval = setInterval(() => {
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % service.heroImages.length);
+            }, 5000);
+            return () => clearInterval(interval);
+        }
+    }, [service]);
 
     if (!service) return <div className="pd-not-found">Loading or Service Not Found...</div>;
 
@@ -62,7 +98,20 @@ export default function ServiceDetail() {
                     </div>
                 </div>
                 <div className="pd-hero-image">
-                    <img src={service.heroImage} alt={service.name} />
+                    {service.heroImages && service.heroImages.length > 0 ? (
+                        <div className="hero-carousel">
+                            {service.heroImages.map((img, index) => (
+                                <img
+                                    key={index}
+                                    src={img}
+                                    alt={`${service.name} ${index + 1}`}
+                                    className={`carousel-image ${index === currentImageIndex ? "active" : ""}`}
+                                />
+                            ))}
+                        </div>
+                    ) : (
+                        <img src={service.heroImage} alt={service.name} />
+                    )}
                 </div>
             </div>
 
@@ -116,6 +165,35 @@ export default function ServiceDetail() {
                                 <li key={i}>{f}</li>
                             ))}
                         </ul>
+                    </section>
+                )}
+
+                {/* SOFTWARE DASHBOARD CAROUSEL */}
+                {service.softwareDashboard && (
+                    <section className="pd-section dashboard-section">
+                        <h2 className="section-title">Software Dashboard</h2>
+                        <div className="dashboard-carousel">
+                            <button className="dashboard-nav prev" onClick={prevDashboard}>&#10094;</button>
+
+                            <div className="dashboard-display">
+                                <img
+                                    src={service.softwareDashboard[dashboardIndex]}
+                                    alt={`Dashboard View ${dashboardIndex + 1}`}
+                                    className="dashboard-image"
+                                />
+                            </div>
+
+                            <button className="dashboard-nav next" onClick={nextDashboard}>&#10095;</button>
+                        </div>
+                        <div className="dashboard-dots">
+                            {service.softwareDashboard.map((_, idx) => (
+                                <span
+                                    key={idx}
+                                    className={`dot ${idx === dashboardIndex ? "active" : ""}`}
+                                    onClick={() => setDashboardIndex(idx)}
+                                ></span>
+                            ))}
+                        </div>
                     </section>
                 )}
 

@@ -15,6 +15,17 @@ import networkSecurityDiagram from "../assets/network_security_diagram.png";
 import utilityBillingDiagram from "../assets/utility_billing_diagram.png";
 import leakDetectionDiagram from "../assets/leak_detection_diagram.png";
 
+// Dashboard Images
+import img77 from "../utilitybillingmetering/img77.jpg";
+import img78 from "../utilitybillingmetering/img78.jpg";
+import img79 from "../utilitybillingmetering/img79.jpg";
+import img80 from "../utilitybillingmetering/img80.jpg";
+import img90 from "../utilitybillingmetering/img90.jpg";
+import img91 from "../utilitybillingmetering/img91.jpg";
+import img92 from "../utilitybillingmetering/img92.jpg";
+import img93 from "../utilitybillingmetering/img93.jpg";
+import img94 from "../utilitybillingmetering/img94.jpg";
+
 const serviceData = [
     {
         category: "Solutions",
@@ -60,7 +71,11 @@ const serviceData = [
                     "Monthly MIS reports / Account Management",
                     "Pre-paid billing management",
                     "Integration API to finance ERP - Oracle / SAP / AX-dynamics ..."
-                ]
+                ],
+                softwareDashboard: [
+                    img77, img78, img79, img80, img90, img91, img92, img93, img94
+                ],
+                brochure: "../files/Brochure.pdf"
             },
             {
                 id: "network-security",
@@ -95,6 +110,7 @@ const serviceData = [
                 name: "AQI Monitoring",
                 description: "Comprehensive Indoor Air Quality monitoring solution using LoRaWAN wireless sensors to track CO2, TVOC, PM2.5, temperature, and humidity for healthy building certification and occupant wellbeing.",
                 heroImage: iotl,
+                heroImages: [iotl, smartImg], // Placeholder: Replace smartImg with the new image
                 content: [
                     "ConnectME's AQI (Air Quality Index) monitoring solution provides real-time visibility into indoor environmental conditions across schools, malls, hospitals, office buildings, and commercial facilities. Our wireless LoRaWAN sensor network enables comprehensive air quality tracking without complex wiring.",
                     "The solution combines multi-parameter IAQ sensors (CO2, TVOC, PM2.5, PM4, PM10) with temperature and humidity monitoring, delivering actionable insights through cloud dashboards and mobile apps. Ideal for healthy building certification (WELL, LEED) and ensuring occupant comfort and productivity."

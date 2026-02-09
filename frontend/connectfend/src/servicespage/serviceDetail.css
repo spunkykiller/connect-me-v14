@@ -209,6 +209,111 @@
 }
 
 /* ======================================================
+   HERO CAROUSEL
+===================================================== */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* ======================================================
+   SOFTWARE DASHBOARD CAROUSEL
+===================================================== */
+.dashboard-section {
+    position: relative;
+    padding: 40px 0;
+}
+
+.dashboard-carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dashboard-display {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background: #000;
+}
+
+.dashboard-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Show full image without cropping */
+    transition: opacity 0.5s ease;
+    display: block;
+}
+
+.dashboard-nav {
+    background: rgba(38, 170, 227, 0.1);
+    border: none;
+    color: var(--color-primary);
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-nav:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+.dashboard-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: var(--color-primary);
+    transform: scale(1.2);
+}
+
+/* ======================================================
    OFFERINGS SECTION
 ===================================================== */
 .offerings-list {
