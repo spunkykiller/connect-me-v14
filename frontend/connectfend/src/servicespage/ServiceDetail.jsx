@@ -17,29 +17,6 @@ export default function ServiceDetail() {
         // Find Service
         let foundService = null;
         let foundCat = null;
-        // ... (existing code)
-
-        // Dashboard Carousel Logic
-        useEffect(() => {
-            if (service && service.softwareDashboard && service.softwareDashboard.length > 1) {
-                const interval = setInterval(() => {
-                    setDashboardIndex((prev) => (prev + 1) % service.softwareDashboard.length);
-                }, 5000);
-                return () => clearInterval(interval);
-            }
-        }, [service]);
-
-        const nextDashboard = () => {
-            if (service && service.softwareDashboard) {
-                setDashboardIndex((prev) => (prev + 1) % service.softwareDashboard.length);
-            }
-        };
-
-        const prevDashboard = () => {
-            if (service && service.softwareDashboard) {
-                setDashboardIndex((prev) => (prev - 1 + service.softwareDashboard.length) % service.softwareDashboard.length);
-            }
-        };
 
         if (serviceId) {
             foundCat = serviceData.find(c => c.slug === category);
@@ -51,11 +28,33 @@ export default function ServiceDetail() {
         if (foundService) {
             setService(foundService);
             setBreadcrumbs([
-                { label: foundCat.category, path: "#" }, // No generic landing yet
+                { label: foundCat.category, path: "#" },
                 { label: foundService.name, path: "#" }
             ]);
         }
     }, [category, serviceId]);
+
+    // Dashboard Carousel Logic
+    useEffect(() => {
+        if (service && service.softwareDashboard && service.softwareDashboard.length > 1) {
+            const interval = setInterval(() => {
+                setDashboardIndex((prev) => (prev + 1) % service.softwareDashboard.length);
+            }, 5000);
+            return () => clearInterval(interval);
+        }
+    }, [service]);
+
+    const nextDashboard = () => {
+        if (service && service.softwareDashboard) {
+            setDashboardIndex((prev) => (prev + 1) % service.softwareDashboard.length);
+        }
+    };
+
+    const prevDashboard = () => {
+        if (service && service.softwareDashboard) {
+            setDashboardIndex((prev) => (prev - 1 + service.softwareDashboard.length) % service.softwareDashboard.length);
+        }
+    };
 
     // Carousel Logic
     useEffect(() => {
