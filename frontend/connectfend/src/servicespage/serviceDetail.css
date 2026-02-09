@@ -1,0 +1,213 @@
+/* src/servicespage/serviceDetail.css */
+
+.service-page {
+    /* Inherits pd-page styles */
+}
+
+/* SUB ITEMS GRID */
+.sub-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.sub-item-card {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-left: 4px solid #26AAE3;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.sub-item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sub-item-title {
+    font-size: var(--font-h4);
+    /* Was 18px, but h4 is 20px, body is 18px. Sub-item title implies header. Let's use h4 for hierarchy or var(--font-body) */
+    font-size: var(--font-body);
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.sub-item-desc {
+    font-size: var(--font-body-sm);
+    /* Was 15px */
+    color: #666;
+    line-height: 1.5;
+}
+
+/* TEXT BLOCK */
+.service-text-block p {
+    font-size: var(--font-body);
+    /* Was 18px */
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.service-partners {
+    background: #eef8fc;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 40px;
+    color: #26AAE3;
+    font-size: var(--font-body-sm);
+    /* Was 16px */
+}
+
+/* ======================================================
+   WHAT WE MONITOR GRID (AQI)
+====================================================== */
+.monitor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.monitor-card {
+    background: linear-gradient(135deg, #26AAE3 0%, #1a8bc2 100%);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.monitor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(38, 170, 227, 0.3);
+}
+
+.monitor-param {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.monitor-desc {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* ======================================================
+   HOW IT WORKS GRID (AQI)
+====================================================== */
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.how-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.how-card:hover {
+    transform: translateX(5px);
+}
+
+.how-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: #E6782D;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.how-content {
+    flex: 1;
+}
+
+.how-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.how-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ======================================================
+   WHERE IT WORKS BEST GRID (AQI)
+====================================================== */
+.where-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.where-card {
+    background: white;
+    border: 2px solid #26AAE3;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.where-card:hover {
+    background: #26AAE3;
+    color: white;
+}
+
+.where-card:hover .where-location,
+.where-card:hover .where-benefit {
+    color: white;
+}
+
+.where-location {
+    font-size: 16px;
+    font-weight: 700;
+    color: #26AAE3;
+    margin-bottom: 8px;
+}
+
+.where-benefit {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* ======================================================
+   BENEFITS LIST
+====================================================== */
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.benefits-list li:last-child {
+    border-bottom: none;
+}
+
+.benefit-icon {
+    color: #22c55e;
+    font-size: 18px;
+    flex-shrink: 0;
+}
