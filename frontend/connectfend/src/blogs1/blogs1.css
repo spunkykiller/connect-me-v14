@@ -54,6 +54,11 @@
   font-size: 28px;
   margin-bottom: 8px;
   line-height: 1.2;
+  color: #fff;
+}
+
+.featured-content p {
+  color: #fff;
 }
 
 /* SMALL CARD - Fixed height calculation */

@@ -40,12 +40,10 @@
   font-size: var(--font-big);
   font-weight: 700;
   margin-bottom: 5px;
-  color: #fff;
 }
 
 .about-hero-overlay p {
   font-size: var(--font-body-lg);
-  color: #fff;
 }
 
 
@@ -151,8 +149,7 @@
 }
 
 .about-card-sub {
-  font-size: var(--font-h2);
-  /* Was 30px, bumped to 38px standard, or maybe h3? Let's use h2 as it looks big in design */
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -166,7 +163,7 @@
 
 .about-card-small {
   margin-top: 15px;
-  font-size: var(--font-body-sm) !important;
+  font-size: 16px !important;
   color: #555 !important;
 }
 
@@ -198,8 +195,7 @@
 }
 
 .iso-label {
-  font-size: var(--font-h2);
-  /* Was 36px */
+  font-size: 36px;
   font-weight: 600;
   color: #d96f1a;
   /* same orange as screenshot */
@@ -241,32 +237,25 @@
   border-radius: 8px;
 }
 
-.founder-img-top {
-  object-position: top center !important;
-}
-
 /* INFO BLOCK */
 .founder-info {
   max-width: 680px;
 }
 
 .founder-name {
-  font-size: var(--font-h3);
-  /* Was 26px */
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .founder-role {
-  font-size: var(--font-body);
-  /* Was 18px */
+  font-size: 18px;
   color: #e36f49;
   margin-bottom: 15px;
 }
 
 .founder-list {
-  font-size: var(--font-body);
-  /* Was 18px */
+  font-size: 18px;
   line-height: 1.6;
   color: #333;
 }
@@ -302,40 +291,18 @@
 }
 
 .tech-title {
-  font-size: clamp(3.2rem, 8vw, 5rem);
+  font-size: 60px;
   font-weight: 700;
   color: white;
-  line-height: var(--lh-tight);
+  line-height: 1;
   margin-bottom: 28px;
-  max-width: 900px;
 }
 
 .tech-sub {
-  font-size: var(--font-body-lg);
-  color: #f1f5f9;
-  line-height: 1.4;
-  margin-bottom: 10px;
-  max-width: 800px;
-}
-
-.about-title {
-  font-size: var(--font-h1);
-  color: var(--color-text-main);
-  margin-bottom: 20px;
-}
-
-.about-subtitle {
-  font-size: var(--font-h4);
-  color: var(--color-primary);
-  margin-bottom: 30px;
-  font-weight: 600;
-}
-
-.about-text p {
-  font-size: var(--font-body);
-  color: var(--color-text-body);
-  line-height: var(--lh-base);
-  margin-bottom: 20px;
+  font-size: 28px;
+  color: #e5e5e5;
+  line-height: 1.3;
+  margin-bottom: 12px;
 }
 
 /* ===========================
@@ -387,12 +354,11 @@
   }
 
   .about-hero-overlay h1 {
-    font-size: var(--font-h1);
-    /* Mobile header */
+    font-size: clamp(1.875rem, 7vw, 2.5rem);
   }
 
   .about-hero-overlay p {
-    font-size: var(--font-caption);
+    font-size: 16px;
   }
 
   .about-image {
@@ -401,7 +367,7 @@
 
   .about-text p,
   .about-full-text {
-    font-size: var(--font-body-sm);
+    font-size: 16px;
     line-height: 1.7;
   }
 
@@ -416,17 +382,16 @@
   }
 
   .about-card-title {
-    font-size: var(--font-h3);
+    font-size: clamp(1.5rem, 5vw, 2rem);
   }
 
   .about-card-sub {
-    font-size: var(--font-h3);
-    /* Reduce from h2 on mobile */
+    font-size: 24px;
   }
 
   .about-card ul,
   .about-card p {
-    font-size: var(--font-body-sm);
+    font-size: 16px;
   }
 
   .iso-section {
@@ -440,7 +405,7 @@
   }
 
   .iso-label {
-    font-size: var(--font-h3);
+    font-size: 28px;
   }
 
   .founder-section {
@@ -448,7 +413,7 @@
   }
 
   .founder-title {
-    font-size: var(--font-h2);
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
     margin-bottom: 30px;
   }
 
@@ -462,15 +427,15 @@
   }
 
   .founder-name {
-    font-size: var(--font-h4);
+    font-size: 22px;
   }
 
   .founder-role {
-    font-size: var(--font-body-sm);
+    font-size: 16px;
   }
 
   .founder-list {
-    font-size: var(--font-body-sm);
+    font-size: 16px;
   }
 
   .tech-hero {
@@ -478,14 +443,11 @@
   }
 
   .tech-title {
-    font-size: clamp(2rem, 10vw, 3rem);
-    margin-bottom: 15px;
+    font-size: clamp(2rem, 8vw, 3rem);
   }
 
   .tech-sub {
-    font-size: var(--font-body);
-    line-height: 1.4;
-    margin-bottom: 8px;
+    font-size: clamp(1.125rem, 4vw, 1.5rem);
   }
 }
 
@@ -503,11 +465,11 @@
   }
 
   .about-hero-overlay h1 {
-    font-size: var(--font-h2);
+    font-size: 1.875rem;
   }
 
   .about-hero-overlay p {
-    font-size: var(--font-caption);
+    font-size: 14px;
   }
 
   .about-image {
@@ -516,7 +478,7 @@
 
   .about-text p,
   .about-full-text {
-    font-size: var(--font-body-sm);
+    font-size: 15px;
   }
 
   .about-cards-section {
@@ -528,7 +490,7 @@
   }
 
   .about-card-sub {
-    font-size: var(--font-h4);
+    font-size: 20px;
   }
 
   .iso-img {
@@ -536,7 +498,7 @@
   }
 
   .iso-label {
-    font-size: var(--font-h4);
+    font-size: 24px;
   }
 
   .founder-img {
@@ -548,12 +510,10 @@
   }
 
   .tech-title {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
+    font-size: 2rem;
   }
 
   .tech-sub {
-    font-size: var(--font-body-sm);
-    line-height: 1.3;
+    font-size: 1.125rem;
   }
 }

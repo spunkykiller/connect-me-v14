@@ -115,9 +115,9 @@
 
 /* TEXT CONTENT */
 .testimonial-text {
-  font-size: var(--font-body);
-  line-height: var(--lh-base);
-  color: var(--color-text-body);
+  font-size: 23px;
+  line-height: 1.4;
+  color: #333;
   margin-bottom: 35px;
 }
 
@@ -141,7 +141,7 @@
 .marquee-track {
   display: flex;
   gap: var(--spacing-gap);
-  animation: marqueeScroll 120s linear infinite;
+  animation: marqueeScroll 60s linear infinite;
   /* Consistent speed */
 }
 

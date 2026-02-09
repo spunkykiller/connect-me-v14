@@ -31,14 +31,8 @@
 }
 
 /* Pause on hover for premium UX */
-/* Pause on hover for premium UX */
 .marquee-track:hover {
   animation-play-state: paused;
-}
-
-.animate-scroll-left {
-  animation: scroll-left 60s linear infinite;
-  will-change: transform;
 }
 
 @keyframes scroll-left {

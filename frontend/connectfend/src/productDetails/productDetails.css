@@ -48,13 +48,15 @@
   font-size: var(--font-h1);
   font-weight: 700;
   line-height: var(--lh-tight);
-  color: var(--color-text-main);
+  color: #111;
+  /* Restore v12 dark contrast */
   margin-bottom: 20px;
 }
 
 .pd-tagline {
   font-size: var(--font-h3);
-  color: var(--color-primary);
+  color: #333;
+  /* Restore v12 body-contrast tagline */
   margin-bottom: 20px;
   line-height: var(--lh-tight);
 }
@@ -188,7 +190,8 @@
   font-weight: 600;
   margin-bottom: 20px;
   margin-top: 32px;
-  color: #2c3e50;
+  color: #222;
+  /* Uniform dark professional header */
 }
 
 /* --- TOSI SPECIALIZED VIEW STYLES --- */
