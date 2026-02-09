@@ -178,251 +178,252 @@ const serviceData = [
                     "With both wireless and wired leak detection technologies, ConnectME delivers flexible and scalable solutions for every infrastructure requirement."
                 ],
                 subItems: [
-                    title: "1. Wireless Leak Detection System (LoRaWAN-Based)",
-                    desc: "ConnectME’s wireless leak detection solution is built on LoRaWAN-enabled battery-powered sensors with rope-type sensing cables. These sensors are deployed across critical areas such as basements, pump rooms, HVAC zones, and pipe networks. When water comes in contact with the rope, the sensor instantly detects moisture and transmits the alert through a private LoRaWAN network to the UCONNECT EDGE gateway.",
-                    keyFeatures: [
-                        "Battery-operated wireless sensors",
-                        "Long-range LoRaWAN communication",
-                        "Rope-type leak sensing cable",
-                        "Private LoRaWAN infrastructure",
-                        "Low maintenance and easy deployment",
-                        "Ideal for retrofit installations"
-                    ]
+                    {
+                        title: "1. Wireless Leak Detection System (LoRaWAN-Based)",
+                        desc: "ConnectME’s wireless leak detection solution is built on LoRaWAN-enabled battery-powered sensors with rope-type sensing cables. These sensors are deployed across critical areas such as basements, pump rooms, HVAC zones, and pipe networks. When water comes in contact with the rope, the sensor instantly detects moisture and transmits the alert through a private LoRaWAN network to the UCONNECT EDGE gateway.",
+                        keyFeatures: [
+                            "Battery-operated wireless sensors",
+                            "Long-range LoRaWAN communication",
+                            "Rope-type leak sensing cable",
+                            "Private LoRaWAN infrastructure",
+                            "Low maintenance and easy deployment",
+                            "Ideal for retrofit installations"
+                        ]
                     },
-            {
-                title: "2. Wired Leak Detection System",
-                desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies."
-            },
-            {
-                title: "3. Location-Based Leak Detection (5-Wire Rope Cable)",
-                desc: "This advanced system uses a 5-wire sensing cable (Two sensing wires, One reference wire, Power wires, Communication wires). When water touches the cable, resistance changes between the sensing wires. The controller analyzes this variation to calculate the exact distance of the leak.",
-                technicalHighlights: [
-                    "MODBUS RS485 communication interface",
-                    "Real-time leak distance reporting",
-                    "Location accuracy up to ±1 meter",
-                    "Extendable cable segments (5 m / 7.5 m)",
-                    "Maximum extension up to 50 meters"
+                    {
+                        title: "2. Wired Leak Detection System",
+                        desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies."
+                    },
+                    {
+                        title: "3. Location-Based Leak Detection (5-Wire Rope Cable)",
+                        desc: "This advanced system uses a 5-wire sensing cable (Two sensing wires, One reference wire, Power wires, Communication wires). When water touches the cable, resistance changes between the sensing wires. The controller analyzes this variation to calculate the exact distance of the leak.",
+                        technicalHighlights: [
+                            "MODBUS RS485 communication interface",
+                            "Real-time leak distance reporting",
+                            "Location accuracy up to ±1 meter",
+                            "Extendable cable segments (5 m / 7.5 m)",
+                            "Maximum extension up to 50 meters"
+                        ],
+                        keyBenefits: [
+                            "Precise leak localization",
+                            "Cable break and damage detection",
+                            "Reusable after drying",
+                            "Suitable for long cable routes",
+                            "Ideal for data centers, HVAC rooms, and basements"
+                        ]
+                    },
+                    {
+                        title: "4. Non-Location Leak Detection (2-Wire Rope Cable)",
+                        desc: "This system detects water presence in a defined zone without pinpointing the exact location. It uses a 2-wire rope cable connected to a controller that provides NO/NC dry contact outputs when water is detected.",
+                        technicalHighlights: [
+                            "Zone-based leak detection",
+                            "NO/NC relay outputs",
+                            "Cable extension up to 250 meters",
+                            "Standard cable lengths: 5 m and 10 m",
+                            "Plug-and-play extensions"
+                        ],
+                        keyBenefits: [
+                            "Cost-effective solution",
+                            "Simple installation",
+                            "Reliable zone monitoring",
+                            "Suitable for plant rooms and pipe corridors"
+                        ]
+                    },
+                    {
+                        title: "5. Integrated Monitoring via UCONNECT EDGE Gateway",
+                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
+                    },
+                    {
+                        title: "6. Multi-Level Alert & Notification System",
+                        desc: "From the UCONNECT EDGE gateway, alerts are delivered through multiple channels:",
+                        multiLevelAlerts: [
+                            { type: "1️⃣ Local Alarm System", points: ["Hooter and siren alerts", "Reset and acknowledgment support", "Immediate on-site indication"] },
+                            { type: "2️⃣ BMS / SCADA Integration", points: ["BACnet & Modbus communication", "Seamless connection to building management systems", "Centralized monitoring"] },
+                            { type: "3️⃣ Cloud Platform Monitoring", points: ["Real-time dashboards", "Historical data storage", "Performance analytics", "Automated reporting"] },
+                            { type: "4️⃣ Mobile Notifications", points: ["WhatsApp alerts", "SMS notifications", "Email reports", "Direct alerts to FM and maintenance teams"] }
+                        ]
+                    }
                 ],
-                keyBenefits: [
-                    "Precise leak localization",
-                    "Cable break and damage detection",
-                    "Reusable after drying",
-                    "Suitable for long cable routes",
-                    "Ideal for data centers, HVAC rooms, and basements"
+                features: [
+                    "Early leak detection and prevention",
+                    "Reduced asset damage",
+                    "Lower maintenance costs",
+                    "Improved operational reliability",
+                    "Faster fault response",
+                    "Enhanced safety",
+                    "Long-term infrastructure protection"
+                ],
+                conclusion: "ConnectME’s Smart Water Leak Detection Solution provides a complete, reliable, and scalable platform for protecting critical infrastructure from water-related risks. By combining advanced sensing technologies, intelligent gateways, cloud analytics, and instant notifications, we empower facility managers to proactively safeguard their assets and operations.",
+                applications: [
+                    "Server rooms and data centers",
+                    "Mechanical and electrical rooms",
+                    "Basement and underground areas",
+                    "Under-sink and restroom facilities",
+                    "HVAC equipment and chiller rooms",
+                    "Storage facilities and warehouses"
                 ]
             },
             {
-                title: "4. Non-Location Leak Detection (2-Wire Rope Cable)",
-                desc: "This system detects water presence in a defined zone without pinpointing the exact location. It uses a 2-wire rope cable connected to a controller that provides NO/NC dry contact outputs when water is detected.",
-                technicalHighlights: [
-                    "Zone-based leak detection",
-                    "NO/NC relay outputs",
-                    "Cable extension up to 250 meters",
-                    "Standard cable lengths: 5 m and 10 m",
-                    "Plug-and-play extensions"
+                id: "intelligent-street-lighting",
+                name: "Intelligent Street Lighting System",
+                description: "Smart street lighting solution using LoRaWAN motion and light sensors with remote control capabilities to achieve 60-80% energy savings through motion-based activation and daylight harvesting.",
+                heroImage: left1,
+                content: [
+                    "ConnectME's Intelligent Street Lighting System transforms traditional street lighting into a smart, energy-efficient network. Using LoRaWAN wireless sensors and smart switches, the solution enables motion-based activation, daylight harvesting, and remote control to dramatically reduce energy consumption while maintaining safety and visibility.",
+                    "The system combines motion/light sensors with smart M-Bus/LoRaWAN switches and edge controllers to create an autonomous lighting network. Lights dim or turn off during low-activity periods and brighten when motion is detected, achieving 60-80% energy savings compared to traditional always-on lighting."
                 ],
-                keyBenefits: [
-                    "Cost-effective solution",
-                    "Simple installation",
-                    "Reliable zone monitoring",
-                    "Suitable for plant rooms and pipe corridors"
+                subItems: [
+                    { title: "Motion & Light Sensors", desc: "LoRaWAN wireless sensors detecting motion (PIR) and ambient light levels, triggering intelligent lighting control based on occupancy and daylight availability." },
+                    { title: "Smart Switches/Relays", desc: "M-Bus and LoRaWAN smart switches (TKN2101C compact) for remote on/off control of street lights, supporting 230VAC loads with relay feedback monitoring." },
+                    { title: "Edge Controllers", desc: "Local intelligence for lighting logic, scheduling algorithms, and autonomous operation even during network outages, with HTTPS cloud synchronization." },
+                    { title: "Cloud Platform", desc: "Centralized monitoring and control dashboard for citywide lighting management, energy consumption tracking, fault detection, and maintenance scheduling." }
+                ],
+                features: [
+                    "Motion-based activation (PIR sensors)",
+                    "Daylight harvesting (ambient light sensing)",
+                    "Remote on/off control via cloud dashboard",
+                    "Automated dimming schedules",
+                    "60-80% energy savings",
+                    "LoRaWAN wireless connectivity",
+                    "Real-time energy consumption monitoring",
+                    "Fault detection and maintenance alerts",
+                    "Extended lamp life (reduced operating hours)",
+                    "Scalable architecture (1000+ lights per network)"
+                ],
+                benefits: [
+                    "Significant energy cost reduction (60-80%)",
+                    "Reduced carbon footprint and sustainability",
+                    "Lower maintenance costs",
+                    "Extended lamp and fixture lifespan",
+                    "Improved safety through intelligent lighting",
+                    "Real-time monitoring and fault detection",
+                    "Flexible scheduling and control",
+                    "Quick ROI (typically 2-3 years)"
                 ]
             },
             {
-                title: "5. Integrated Monitoring via UCONNECT EDGE Gateway",
-                desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
-            },
-            {
-                title: "6. Multi-Level Alert & Notification System",
-                desc: "From the UCONNECT EDGE gateway, alerts are delivered through multiple channels:",
-                multiLevelAlerts: [
-                    { type: "1️⃣ Local Alarm System", points: ["Hooter and siren alerts", "Reset and acknowledgment support", "Immediate on-site indication"] },
-                    { type: "2️⃣ BMS / SCADA Integration", points: ["BACnet & Modbus communication", "Seamless connection to building management systems", "Centralized monitoring"] },
-                    { type: "3️⃣ Cloud Platform Monitoring", points: ["Real-time dashboards", "Historical data storage", "Performance analytics", "Automated reporting"] },
-                    { type: "4️⃣ Mobile Notifications", points: ["WhatsApp alerts", "SMS notifications", "Email reports", "Direct alerts to FM and maintenance teams"] }
+                id: "intelligent-hvac",
+                name: "Intelligent HVAC Automated Scheduling",
+                description: "Smart Classroom HVAC Automation enables universities to automatically control classroom air-conditioning based on academic schedules using the UCONNECT-EDGE on-premise gateway.",
+                heroImage: utilityImg,
+                content: [
+                    "Smart Classroom HVAC Automation enables universities to automatically control classroom air-conditioning based on academic schedules. Using the UCONNECT-EDGE on-premise gateway, classroom allocations synced from the cloud are translated into real-time BACnet / Modbus commands to FAHUs and HVAC systems.",
+                    "The solution ensures that AC systems are switched ON/OFF and thermostats set to optimal temperatures only during allocated class hours, reducing energy wastage while maintaining occupant comfort. A centralized cloud platform provides visibility into live HVAC operational status across multiple campuses, while edge intelligence ensures reliable, low-latency control even during network disruptions.",
+                    "Universities today operate across multiple campuses with hundreds of classrooms, each following dynamic academic schedules. Manually managing HVAC operations in such environments leads to energy inefficiencies, higher operational costs, and inconsistent indoor comfort.",
+                    "To address this challenge, leading universities across GCC have deployed an Edge–Cloud based Smart Classroom HVAC Automation solution powered by the UCONNECT-EDGE gateway."
+                ],
+                subItems: [
+                    { title: "UCONNECT-EDGE Gateway", desc: "On-premise gateway that syncs classroom schedules from the cloud and translates them into real-time BACnet/Modbus commands for HVAC control." },
+                    { title: "Cloud Scheduling Platform", desc: "Centralized platform for managing classroom schedules, monitoring live HVAC status across multiple campuses, and ensuring operational transparency." },
+                    { title: "BACnet & Modbus Integration", desc: "Direct protocol integration with existing BMS infrastructure for seamless FAHU and HVAC system control without hardware replacement." },
+                    { title: "Edge Intelligence", desc: "Deterministic control at the edge ensures reliable, low-latency HVAC operations even during temporary network disruptions." }
+                ],
+                howItWorks: [
+                    { title: "Cloud Schedule Sync", desc: "Classroom schedules are centrally managed and uploaded to a secure cloud platform, then automatically synchronized with on-premise UCONNECT-EDGE gateways." },
+                    { title: "Real-time Allocation Processing", desc: "Based on real-time classroom allocations, the gateway determines which FAHUs need to be activated or deactivated." },
+                    { title: "FAHU ON/OFF Control", desc: "FAHUs are switched ON/OFF automatically based on scheduled class hours, eliminating manual intervention." },
+                    { title: "Temperature Optimization", desc: "Thermostats are set to predefined optimal temperatures, ensuring comfort while maximizing energy efficiency." }
+                ],
+                features: [
+                    "Schedule-driven HVAC automation across multiple campuses",
+                    "Real-time FAHU ON/OFF and temperature control",
+                    "Edge-based BACnet & Modbus integration with existing BMS",
+                    "Live operational visibility via cloud dashboards",
+                    "Multi-protocol support: MQTT, HTTPS, FTP, LoRaWAN forwarder",
+                    "Reduced energy consumption and improved asset utilization",
+                    "Deterministic control with edge intelligence",
+                    "Automatic schedule synchronization from cloud"
+                ],
+                applications: [
+                    "University campuses and educational institutions",
+                    "Corporate training centers",
+                    "Conference and convention centers",
+                    "Multi-building commercial complexes",
+                    "Smart campus initiatives",
+                    "District cooling/heating systems"
+                ],
+                benefits: [
+                    "Significant energy cost savings",
+                    "Improved classroom comfort and consistency",
+                    "Zero manual intervention for HVAC scheduling",
+                    "Seamless integration with existing BMS infrastructure",
+                    "Scalable architecture for future campus expansion",
+                    "Contribution to sustainability and carbon reduction goals",
+                    "Enhanced operational excellence",
+                    "Quick ROI through reduced energy consumption"
                 ]
             }
-        ],
-        features: [
-            "Early leak detection and prevention",
-            "Reduced asset damage",
-            "Lower maintenance costs",
-            "Improved operational reliability",
-            "Faster fault response",
-            "Enhanced safety",
-            "Long-term infrastructure protection"
-        ],
-        conclusion: "ConnectME’s Smart Water Leak Detection Solution provides a complete, reliable, and scalable platform for protecting critical infrastructure from water-related risks. By combining advanced sensing technologies, intelligent gateways, cloud analytics, and instant notifications, we empower facility managers to proactively safeguard their assets and operations.",
-        applications: [
-            "Server rooms and data centers",
-            "Mechanical and electrical rooms",
-            "Basement and underground areas",
-            "Under-sink and restroom facilities",
-            "HVAC equipment and chiller rooms",
-            "Storage facilities and warehouses"
         ]
     },
     {
-        id: "intelligent-street-lighting",
-        name: "Intelligent Street Lighting System",
-        description: "Smart street lighting solution using LoRaWAN motion and light sensors with remote control capabilities to achieve 60-80% energy savings through motion-based activation and daylight harvesting.",
-        heroImage: left1,
-        content: [
-            "ConnectME's Intelligent Street Lighting System transforms traditional street lighting into a smart, energy-efficient network. Using LoRaWAN wireless sensors and smart switches, the solution enables motion-based activation, daylight harvesting, and remote control to dramatically reduce energy consumption while maintaining safety and visibility.",
-            "The system combines motion/light sensors with smart M-Bus/LoRaWAN switches and edge controllers to create an autonomous lighting network. Lights dim or turn off during low-activity periods and brighten when motion is detected, achieving 60-80% energy savings compared to traditional always-on lighting."
-        ],
-        subItems: [
-            { title: "Motion & Light Sensors", desc: "LoRaWAN wireless sensors detecting motion (PIR) and ambient light levels, triggering intelligent lighting control based on occupancy and daylight availability." },
-            { title: "Smart Switches/Relays", desc: "M-Bus and LoRaWAN smart switches (TKN2101C compact) for remote on/off control of street lights, supporting 230VAC loads with relay feedback monitoring." },
-            { title: "Edge Controllers", desc: "Local intelligence for lighting logic, scheduling algorithms, and autonomous operation even during network outages, with HTTPS cloud synchronization." },
-            { title: "Cloud Platform", desc: "Centralized monitoring and control dashboard for citywide lighting management, energy consumption tracking, fault detection, and maintenance scheduling." }
-        ],
-        features: [
-            "Motion-based activation (PIR sensors)",
-            "Daylight harvesting (ambient light sensing)",
-            "Remote on/off control via cloud dashboard",
-            "Automated dimming schedules",
-            "60-80% energy savings",
-            "LoRaWAN wireless connectivity",
-            "Real-time energy consumption monitoring",
-            "Fault detection and maintenance alerts",
-            "Extended lamp life (reduced operating hours)",
-            "Scalable architecture (1000+ lights per network)"
-        ],
-        benefits: [
-            "Significant energy cost reduction (60-80%)",
-            "Reduced carbon footprint and sustainability",
-            "Lower maintenance costs",
-            "Extended lamp and fixture lifespan",
-            "Improved safety through intelligent lighting",
-            "Real-time monitoring and fault detection",
-            "Flexible scheduling and control",
-            "Quick ROI (typically 2-3 years)"
-        ]
-    },
-    {
-        id: "intelligent-hvac",
-        name: "Intelligent HVAC Automated Scheduling",
-        description: "Smart Classroom HVAC Automation enables universities to automatically control classroom air-conditioning based on academic schedules using the UCONNECT-EDGE on-premise gateway.",
-        heroImage: utilityImg,
-        content: [
-            "Smart Classroom HVAC Automation enables universities to automatically control classroom air-conditioning based on academic schedules. Using the UCONNECT-EDGE on-premise gateway, classroom allocations synced from the cloud are translated into real-time BACnet / Modbus commands to FAHUs and HVAC systems.",
-            "The solution ensures that AC systems are switched ON/OFF and thermostats set to optimal temperatures only during allocated class hours, reducing energy wastage while maintaining occupant comfort. A centralized cloud platform provides visibility into live HVAC operational status across multiple campuses, while edge intelligence ensures reliable, low-latency control even during network disruptions.",
-            "Universities today operate across multiple campuses with hundreds of classrooms, each following dynamic academic schedules. Manually managing HVAC operations in such environments leads to energy inefficiencies, higher operational costs, and inconsistent indoor comfort.",
-            "To address this challenge, leading universities across GCC have deployed an Edge–Cloud based Smart Classroom HVAC Automation solution powered by the UCONNECT-EDGE gateway."
-        ],
-        subItems: [
-            { title: "UCONNECT-EDGE Gateway", desc: "On-premise gateway that syncs classroom schedules from the cloud and translates them into real-time BACnet/Modbus commands for HVAC control." },
-            { title: "Cloud Scheduling Platform", desc: "Centralized platform for managing classroom schedules, monitoring live HVAC status across multiple campuses, and ensuring operational transparency." },
-            { title: "BACnet & Modbus Integration", desc: "Direct protocol integration with existing BMS infrastructure for seamless FAHU and HVAC system control without hardware replacement." },
-            { title: "Edge Intelligence", desc: "Deterministic control at the edge ensures reliable, low-latency HVAC operations even during temporary network disruptions." }
-        ],
-        howItWorks: [
-            { title: "Cloud Schedule Sync", desc: "Classroom schedules are centrally managed and uploaded to a secure cloud platform, then automatically synchronized with on-premise UCONNECT-EDGE gateways." },
-            { title: "Real-time Allocation Processing", desc: "Based on real-time classroom allocations, the gateway determines which FAHUs need to be activated or deactivated." },
-            { title: "FAHU ON/OFF Control", desc: "FAHUs are switched ON/OFF automatically based on scheduled class hours, eliminating manual intervention." },
-            { title: "Temperature Optimization", desc: "Thermostats are set to predefined optimal temperatures, ensuring comfort while maximizing energy efficiency." }
-        ],
-        features: [
-            "Schedule-driven HVAC automation across multiple campuses",
-            "Real-time FAHU ON/OFF and temperature control",
-            "Edge-based BACnet & Modbus integration with existing BMS",
-            "Live operational visibility via cloud dashboards",
-            "Multi-protocol support: MQTT, HTTPS, FTP, LoRaWAN forwarder",
-            "Reduced energy consumption and improved asset utilization",
-            "Deterministic control with edge intelligence",
-            "Automatic schedule synchronization from cloud"
-        ],
-        applications: [
-            "University campuses and educational institutions",
-            "Corporate training centers",
-            "Conference and convention centers",
-            "Multi-building commercial complexes",
-            "Smart campus initiatives",
-            "District cooling/heating systems"
-        ],
-        benefits: [
-            "Significant energy cost savings",
-            "Improved classroom comfort and consistency",
-            "Zero manual intervention for HVAC scheduling",
-            "Seamless integration with existing BMS infrastructure",
-            "Scalable architecture for future campus expansion",
-            "Contribution to sustainability and carbon reduction goals",
-            "Enhanced operational excellence",
-            "Quick ROI through reduced energy consumption"
+        category: "Services",
+        slug: "services",
+        items: [
+            {
+                id: "utility-maintenance",
+                name: "Utility Meter Maintenance",
+                description: "Ensuring meters stay healthy for accurate billing. Includes AI-enabled AMR validation and faulty meter replacements.",
+                heroImage: utilityImg,
+                content: [
+                    "A tenant metering provides the overview and insights needed for accurate billing of water and energy consumption. Highly accurate and reliable meters combined with intuitive meter reading, correct billing platform and proper validation.",
+                    "ConnectME offers meter maintenance service to ensure meters stay healthy, critical for correct billing. We do maintenance service on faulty meters replacements."
+                ]
+            },
+            {
+                id: "billing",
+                name: "Billing Managed Service",
+                description: "End-to-end billing management, from data grouping and invoice generation to payment portal and collection services.",
+                heroImage: bill,
+                content: [
+                    "Our payment portal allows residents to download bills and check their account from the comfort of their own home. Billing system is a combination of software and hardware that receives service usage information.",
+                    "Collection is the process of chasing past due receivables on customer account. This usually involves sending notifications to the customer and taking appropriate actions in absence of due payments."
+                ]
+            },
+            {
+                id: "amc",
+                name: "AMC & Training",
+                description: "Comprehensive Annual Maintenance Contract and professional training services for metering, billing, PLC, SCADA, and automation systems.",
+                heroImage: amc,
+                content: [
+                    "ConnectME provides comprehensive Annual Maintenance Contract (AMC) and professional training services for metering, billing, PLC, SCADA, and automation systems supplied and implemented by us. Our AMC services ensure continuous system performance through preventive maintenance, regular inspections, software updates, and rapid fault resolution. We support both hardware and software platforms to maximize system reliability and operational uptime.",
+                    "In addition, ConnectME delivers structured technical training programs for operators, engineers, and maintenance teams, enabling effective system operation and troubleshooting. Our hands-on training covers system configuration, monitoring, reporting, and best practices. With dedicated support teams and domain expertise, we help clients achieve long-term efficiency, compliance, and return on investment from their automation and monitoring solutions."
+                ]
+            },
+            {
+                id: "consultancy",
+                name: "Technical Consultancy",
+                description: "Expert consultancy for IoT protocols, Plant Optimization, Networking & Security.",
+                heroImage: consult,
+                content: [
+                    "Specialized focusing on everything from market research and strategy consulting to hardware and software specialists to help navigate the minefield of IoT protocols.",
+                    "We offer: Plant Optimization, Networking & Security, Audit trails, IoT enablement."
+                ]
+            },
+            {
+                id: "plc",
+                name: "PLC & SCADA Services",
+                description: "Control systems and automation services for industrial processes.",
+                heroImage: plc,
+                features: [
+                    "Plant / machine upgrade – retrofits",
+                    "PLC / SCADA / HMI – modifications",
+                    "Maintenance contracts – AMC / SLA",
+                    "Engineering Services",
+                    "Manpower deployment"
+                ]
+            },
+            {
+                id: "development",
+                name: "Development & Services",
+                description: "Custom Web, Mobile, and Desktop Application Development.",
+                heroImage: dev,
+                content: [
+                    "Application development services allow you to build consumer-facing apps for a range of digital platforms like mobile App, web, desktop.",
+                    "We rely on our technological expertise and specialized industry experience to develop any type of web, mobile App, desktop, and hybrid app per your business requirements."
+                ]
+            }
         ]
     }
-]
-    },
-{
-    category: "Services",
-        slug: "services",
-            items: [
-                {
-                    id: "utility-maintenance",
-                    name: "Utility Meter Maintenance",
-                    description: "Ensuring meters stay healthy for accurate billing. Includes AI-enabled AMR validation and faulty meter replacements.",
-                    heroImage: utilityImg,
-                    content: [
-                        "A tenant metering provides the overview and insights needed for accurate billing of water and energy consumption. Highly accurate and reliable meters combined with intuitive meter reading, correct billing platform and proper validation.",
-                        "ConnectME offers meter maintenance service to ensure meters stay healthy, critical for correct billing. We do maintenance service on faulty meters replacements."
-                    ]
-                },
-                {
-                    id: "billing",
-                    name: "Billing Managed Service",
-                    description: "End-to-end billing management, from data grouping and invoice generation to payment portal and collection services.",
-                    heroImage: bill,
-                    content: [
-                        "Our payment portal allows residents to download bills and check their account from the comfort of their own home. Billing system is a combination of software and hardware that receives service usage information.",
-                        "Collection is the process of chasing past due receivables on customer account. This usually involves sending notifications to the customer and taking appropriate actions in absence of due payments."
-                    ]
-                },
-                {
-                    id: "amc",
-                    name: "AMC & Training",
-                    description: "Comprehensive Annual Maintenance Contract and professional training services for metering, billing, PLC, SCADA, and automation systems.",
-                    heroImage: amc,
-                    content: [
-                        "ConnectME provides comprehensive Annual Maintenance Contract (AMC) and professional training services for metering, billing, PLC, SCADA, and automation systems supplied and implemented by us. Our AMC services ensure continuous system performance through preventive maintenance, regular inspections, software updates, and rapid fault resolution. We support both hardware and software platforms to maximize system reliability and operational uptime.",
-                        "In addition, ConnectME delivers structured technical training programs for operators, engineers, and maintenance teams, enabling effective system operation and troubleshooting. Our hands-on training covers system configuration, monitoring, reporting, and best practices. With dedicated support teams and domain expertise, we help clients achieve long-term efficiency, compliance, and return on investment from their automation and monitoring solutions."
-                    ]
-                },
-                {
-                    id: "consultancy",
-                    name: "Technical Consultancy",
-                    description: "Expert consultancy for IoT protocols, Plant Optimization, Networking & Security.",
-                    heroImage: consult,
-                    content: [
-                        "Specialized focusing on everything from market research and strategy consulting to hardware and software specialists to help navigate the minefield of IoT protocols.",
-                        "We offer: Plant Optimization, Networking & Security, Audit trails, IoT enablement."
-                    ]
-                },
-                {
-                    id: "plc",
-                    name: "PLC & SCADA Services",
-                    description: "Control systems and automation services for industrial processes.",
-                    heroImage: plc,
-                    features: [
-                        "Plant / machine upgrade – retrofits",
-                        "PLC / SCADA / HMI – modifications",
-                        "Maintenance contracts – AMC / SLA",
-                        "Engineering Services",
-                        "Manpower deployment"
-                    ]
-                },
-                {
-                    id: "development",
-                    name: "Development & Services",
-                    description: "Custom Web, Mobile, and Desktop Application Development.",
-                    heroImage: dev,
-                    content: [
-                        "Application development services allow you to build consumer-facing apps for a range of digital platforms like mobile App, web, desktop.",
-                        "We rely on our technological expertise and specialized industry experience to develop any type of web, mobile App, desktop, and hybrid app per your business requirements."
-                    ]
-                }
-            ]
-}
 ];
 
 export default serviceData;
