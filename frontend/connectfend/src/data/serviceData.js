@@ -14,6 +14,7 @@ import dev from "../assets/development.webp";
 import networkSecurityDiagram from "../assets/network_security_diagram.png";
 import utilityBillingDiagram from "../assets/utility_billing_diagram.png";
 import leakDetectionDiagram from "../assets/leak_detection_diagram.png";
+import aqiImage2 from "../assets/AQI_image_2.png";
 
 // Dashboard Images
 import img77 from "../utilitybillingmetering/img77.jpg";
@@ -29,6 +30,12 @@ import img94 from "../utilitybillingmetering/img94.jpg";
 // Component Images
 import wiredLeakSensor from "../assets/wired_leak_sensor.png";
 import edgeGateway from "../assets/edge_gateway.png";
+import streetLightDash1 from "../assets/intelligent Street Lighting Dashboards photos/intelligent Street Lighting Dashboard_1.png";
+import streetLightDash2 from "../assets/intelligent Street Lighting Dashboards photos/intelligent Street Lighting Dashboards_2.png";
+import streetLightDash3 from "../assets/intelligent Street Lighting Dashboards photos/intelligent Street Lighting Dashboard_3.png";
+import hvacDash1 from "../assets/Intelligent HVAC Automated Scheduling Dashboard Images/Intelligent HVAC Automated Scheduling Dashboard Images_1.png";
+import hvacDash2 from "../assets/Intelligent HVAC Automated Scheduling Dashboard Images/Intelligent HVAC Automated Scheduling Dashboard Images_2.png";
+
 
 const serviceData = [
     {
@@ -65,17 +72,7 @@ const serviceData = [
                     "DEVELOPERS",
                     "WATER DISTRIBUTION COMPANIES"
                 ],
-                features: [
-                    "Customer Management",
-                    "Meter management",
-                    "Automated Meter Reading",
-                    "Bill generation",
-                    "Receipts & collection management",
-                    "Track, control, monitor & recording of Billing data",
-                    "Monthly MIS reports / Account Management",
-                    "Pre-paid billing management",
-                    "Integration API to finance ERP - Oracle / SAP / AX-dynamics ..."
-                ],
+
                 softwareDashboard: [
                     img77, img78, img79, img80, img90, img91, img92, img93, img94
                 ],
@@ -83,38 +80,117 @@ const serviceData = [
             },
             {
                 id: "network-security",
-                name: "Network Security",
-                description: "Industrial-grade cyber-secure connectivity solutions featuring secure gateways and firewall protection for critical infrastructure and remote device access.",
+                name: "Network Security & Remote Monitoring Solutions",
+                description: "Powered by ConnectME & Tosibox - Secure Infrastructure Access & Network Protection. Integrated Physical & Cyber Security for Smart Infrastructure.",
                 heroImage: networkSecurityDiagram,
                 content: [
-                    "ConnectME provides enterprise-grade network security solutions designed specifically for industrial IoT environments. Our cyber-secure infrastructure protects critical utility and building management systems from unauthorized access while enabling seamless remote connectivity.",
-                    "Built on trusted platforms including Tosi Industrial Gateways and TOSI routers, our solutions ensure encrypted data transmission, secure remote access, and comprehensive firewall protection for your connected infrastructure."
+                    "In today’s connected environment, smart buildings, utilities, industrial plants, and remote facilities rely heavily on digital systems and IoT networks. While connectivity improves efficiency, it also increases exposure to cyber threats and unauthorized physical access.",
+                    "As a Platinum Distributor of Tosibox solutions, ConnectME delivers advanced Network Security and Remote Monitoring Solutions that integrate Cybersecurity, Secure physical access, Encrypted remote connectivity, and Centralized monitoring.",
+                    "By combining Tosibox Locks, Keys, HUB, and Control platform with ConnectME’s system integration expertise, we provide a unified and highly secure infrastructure management solution."
                 ],
                 subItems: [
-                    { title: "VPN Routers", desc: "Industrial VPN routers (TOSI) supporting IPSec, OpenVPN, L2TP protocols with strong encryption for secure remote connectivity to industrial networks and devices." },
-                    { title: "Tosi Industrial Gateway", desc: "Secure industrial gateway with VPN and firewall capabilities designed for critical infrastructure protection, featuring encrypted tunneling and access control." },
-                    { title: "Edge Controllers", desc: "Smart edge processing units with built-in security for local data logic, protocol conversion (M-Bus, Modbus, proprietary), and secure HTTPS communication to cloud servers." },
-                    { title: "Secure Protocols", desc: "Support for encrypted communication protocols including HTTPS, SSL/TLS, IPSec VPN, ensuring data confidentiality and integrity across all network layers." }
+                    {
+                        title: "Tosibox Lock – Secure Remote Access Endpoint",
+                        desc: "The Tosibox Lock is an industrial-grade secure connectivity device installed at remote sites, control panels, substations, and equipment rooms. It acts as a protected endpoint for encrypted remote access.",
+                        technicalHighlights: [
+                            "Industrial-grade Design: Rugged, fanless, and built for harsh environments",
+                            "Plug & Go™ Connectivity: Automatically establishes secure remote network connections within minutes",
+                            "Encrypted VPN Tunnel: End-to-end encrypted connection protecting data integrity",
+                            "Firewall & NAT Friendly: Works seamlessly behind firewalls without manual port forwarding",
+                            "Scalable Architecture: Manage multiple Locks centrally via TOSI HUB"
+                        ],
+                        keyBenefits: [
+                            "Secure remote access for industrial systems",
+                            "Remote maintenance and troubleshooting",
+                            "IoT device connectivity",
+                            "Multi-site automation monitoring",
+                            "SCADA and Building Automation secure links"
+                        ]
+                    },
+                    {
+                        title: "Tosibox Key – Secure Authentication Device",
+                        desc: "TOSI Key® is an intelligent USB-based authentication device that enables secure remote access to networks and devices connected behind one or more TOSI Locks. It contains a secure crypto processor that manages encrypted credentials and automatically establishes secure VPN connections.",
+                        keyFeatures: [
+                            "Physical USB Keys",
+                            "Mobile Client Keys (for secure access via smartphones or tablets)",
+                            "SoftKeys (software-based digital key for virtual environments)"
+                        ],
+                        keyBenefits: [
+                            "Strong multi-factor authentication",
+                            "Centralized control over authorized access rights",
+                            "Only devices with a matched Key can establish remote connections",
+                            "Supports large distributed infrastructures securely"
+                        ]
+                    },
+                    {
+                        title: "Tosibox HUB – Central Access Gateway",
+                        desc: "A centralized platform for managing all Locks, Keys, and access permissions. The HUB allows drag-and-drop configuration of access groups, streamlined onboarding of network nodes, and easy segmentation of devices.",
+                        keyFeatures: [
+                            "Aggregates multiple Locks",
+                            "Manages access groups",
+                            "Enables site-to-site connectivity",
+                            "Supports scalable deployments",
+                            "Simplifies network segmentation"
+                        ]
+                    },
+                    {
+                        title: "Tosibox Control – Central Management Platform",
+                        desc: "A cloud-based management layer that provides centralized control, visibility, and auditing of all connected devices and remote access activity across distributed infrastructure.",
+                        keyFeatures: [
+                            "User and device management",
+                            "Access policy configuration",
+                            "Real-time monitoring",
+                            "Event and audit logging",
+                            "Security compliance reporting"
+                        ]
+                    },
+                    {
+                        title: "Secure Remote Site Monitoring & Data Collection",
+                        desc: "ConnectME utilizes Tosibox Locks and Keys to enable secure monitoring and data collection from distributed and unmanned sites. Each site is securely connected to headquarters through encrypted VPN tunnels.",
+                        keyFeatures: [
+                            "Utility substations",
+                            "Pump rooms and plant rooms",
+                            "Telecom shelters",
+                            "Renewable energy plants",
+                            "Remote control panels",
+                            "Outdoor infrastructure"
+                        ]
+                    }
                 ],
                 features: [
-                    "IPSec, OpenVPN, L2TP VPN protocols",
-                    "Industrial-grade firewall protection",
-                    "Encrypted data transmission (SSL/TLS, HTTPS)",
-                    "Remote access control and authentication",
-                    "Secure cloud connectivity",
-                    "Protocol isolation and network segmentation",
-                    "Real-time security monitoring and alerts",
-                    "Compliance with industrial cybersecurity standards"
+                    "End-to-end encryption",
+                    "Strong mutual authentication",
+                    "Isolated network environments",
+                    "Protection against interception",
+                    "Compliance with cybersecurity standards",
+                    "Safe exchange of access and audit logs",
+                    "Real-time equipment status data",
+                    "Alarm and fault records monitoring"
                 ],
-                images: [remote2],
-                partners: "Solutions based on TOSI and Tosi Industrial Gateway security platforms."
+                applications: [
+                    "Commercial Buildings & Campuses",
+                    "Utilities & Power Networks",
+                    "Industrial & Manufacturing Plants",
+                    "Healthcare Facilities",
+                    "Telecom & Data Centers",
+                    "Smart Communities"
+                ],
+                benefits: [
+                    "Platinum Distributor of Tosibox",
+                    "Proven smart infrastructure expertise",
+                    "End-to-end system integration",
+                    "Certified engineering support",
+                    "Secure VPN-based connectivity",
+                    "Local presence with global standards"
+                ],
+                conclusion: "ConnectME’s Network Security and Remote Monitoring Solutions, powered by Tosibox Locks, Keys, HUB, and Control platforms, provide a comprehensive foundation for protecting modern infrastructure. By integrating secure access management, encrypted VPN communication, centralized monitoring, and cloud intelligence, we enable organizations to operate safely, efficiently, and confidently."
             },
             {
                 id: "aqi-monitoring",
                 name: "AQI Monitoring",
                 description: "Comprehensive Indoor Air Quality monitoring solution using LoRaWAN wireless sensors to track CO2, TVOC, PM2.5, temperature, and humidity for healthy building certification and occupant wellbeing.",
                 heroImage: iotl,
-                heroImages: [iotl, smartImg], // Placeholder: Replace smartImg with the new image
+                heroImages: [iotl, aqiImage2],
                 content: [
                     "ConnectME's AQI (Air Quality Index) monitoring solution provides real-time visibility into indoor environmental conditions across schools, malls, hospitals, office buildings, and commercial facilities. Our wireless LoRaWAN sensor network enables comprehensive air quality tracking without complex wiring.",
                     "The solution combines multi-parameter IAQ sensors (CO2, TVOC, PM2.5, PM4, PM10) with temperature and humidity monitoring, delivering actionable insights through cloud dashboards and mobile apps. Ideal for healthy building certification (WELL, LEED) and ensuring occupant comfort and productivity."
@@ -179,7 +255,7 @@ const serviceData = [
                 ],
                 subItems: [
                     {
-                        title: "1. Wireless Leak Detection System (LoRaWAN-Based)",
+                        title: "Wireless Leak Detection System (LoRaWAN-Based)",
                         desc: "ConnectME’s wireless leak detection solution is built on LoRaWAN-enabled battery-powered sensors with rope-type sensing cables. These sensors are deployed across critical areas such as basements, pump rooms, HVAC zones, and pipe networks. When water comes in contact with the rope, the sensor instantly detects moisture and transmits the alert through a private LoRaWAN network to the UCONNECT EDGE gateway.",
                         keyFeatures: [
                             "Battery-operated wireless sensors",
@@ -191,11 +267,11 @@ const serviceData = [
                         ]
                     },
                     {
-                        title: "2. Wired Leak Detection System",
+                        title: "Wired Leak Detection System",
                         desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies."
                     },
                     {
-                        title: "3. Location-Based Leak Detection (5-Wire Rope Cable)",
+                        title: "Location-Based Leak Detection (5-Wire Rope Cable)",
                         desc: "This advanced system uses a 5-wire sensing cable (Two sensing wires, One reference wire, Power wires, Communication wires). When water touches the cable, resistance changes between the sensing wires. The controller analyzes this variation to calculate the exact distance of the leak.",
                         technicalHighlights: [
                             "MODBUS RS485 communication interface",
@@ -213,7 +289,7 @@ const serviceData = [
                         ]
                     },
                     {
-                        title: "4. Non-Location Leak Detection (2-Wire Rope Cable)",
+                        title: "Non-Location Leak Detection (2-Wire Rope Cable)",
                         desc: "This system detects water presence in a defined zone without pinpointing the exact location. It uses a 2-wire rope cable connected to a controller that provides NO/NC dry contact outputs when water is detected.",
                         technicalHighlights: [
                             "Zone-based leak detection",
@@ -230,11 +306,11 @@ const serviceData = [
                         ]
                     },
                     {
-                        title: "5. Integrated Monitoring via UCONNECT EDGE Gateway",
+                        title: "Integrated Monitoring via UCONNECT EDGE Gateway",
                         desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
                     },
                     {
-                        title: "6. Multi-Level Alert & Notification System",
+                        title: "Multi-Level Alert & Notification System",
                         desc: "From the UCONNECT EDGE gateway, alerts are delivered through multiple channels:",
                         multiLevelAlerts: [
                             { type: "1️⃣ Local Alarm System", points: ["Hooter and siren alerts", "Reset and acknowledgment support", "Immediate on-site indication"] },
@@ -242,9 +318,19 @@ const serviceData = [
                             { type: "3️⃣ Cloud Platform Monitoring", points: ["Real-time dashboards", "Historical data storage", "Performance analytics", "Automated reporting"] },
                             { type: "4️⃣ Mobile Notifications", points: ["WhatsApp alerts", "SMS notifications", "Email reports", "Direct alerts to FM and maintenance teams"] }
                         ]
+                    },
+                    {
+                        title: "Smart Valve Integration (Optional)",
+                        desc: "When integrated with ConnectME Smart Valves, the leak detection system can automatically shut off water supply upon detecting major leaks. Smart valve integration enables fully automated water protection.",
+                        keyBenefits: [
+                            "Prevents large-scale flooding",
+                            "Prevents structural damage",
+                            "Prevents equipment failure",
+                            "Prevents operational disruption"
+                        ]
                     }
                 ],
-                features: [
+                benefits: [
                     "Early leak detection and prevention",
                     "Reduced asset damage",
                     "Lower maintenance costs",
@@ -253,52 +339,96 @@ const serviceData = [
                     "Enhanced safety",
                     "Long-term infrastructure protection"
                 ],
-                conclusion: "ConnectME’s Smart Water Leak Detection Solution provides a complete, reliable, and scalable platform for protecting critical infrastructure from water-related risks. By combining advanced sensing technologies, intelligent gateways, cloud analytics, and instant notifications, we empower facility managers to proactively safeguard their assets and operations.",
-                applications: [
-                    "Server rooms and data centers",
-                    "Mechanical and electrical rooms",
-                    "Basement and underground areas",
-                    "Under-sink and restroom facilities",
-                    "HVAC equipment and chiller rooms",
-                    "Storage facilities and warehouses"
-                ]
+                conclusion: "ConnectME’s Smart Water Leak Detection Solution provides a complete, reliable, and scalable platform for protecting critical infrastructure from water-related risks. By combining advanced sensing technologies, intelligent gateways, cloud analytics, and instant notifications, we empower facility managers to proactively safeguard their assets and operations."
             },
             {
                 id: "intelligent-street-lighting",
-                name: "Intelligent Street Lighting System",
-                description: "Smart street lighting solution using LoRaWAN motion and light sensors with remote control capabilities to achieve 60-80% energy savings through motion-based activation and daylight harvesting.",
+                name: "Smart Street Lighting Management Solution",
+                description: "ConnectME’s Smart Street Lighting Management Solution enables centralized, cloud-based control and monitoring of large-scale outdoor lighting infrastructure across residential communities and public spaces.",
                 heroImage: left1,
                 content: [
-                    "ConnectME's Intelligent Street Lighting System transforms traditional street lighting into a smart, energy-efficient network. Using LoRaWAN wireless sensors and smart switches, the solution enables motion-based activation, daylight harvesting, and remote control to dramatically reduce energy consumption while maintaining safety and visibility.",
-                    "The system combines motion/light sensors with smart M-Bus/LoRaWAN switches and edge controllers to create an autonomous lighting network. Lights dim or turn off during low-activity periods and brighten when motion is detected, achieving 60-80% energy savings compared to traditional always-on lighting."
+                    "ConnectME’s Smart Street Lighting Management Solution enables centralized, cloud-based control and monitoring of large-scale outdoor lighting infrastructure across residential communities and public spaces. Using UCONNECT EDGE controllers installed in feeder panels, lighting schedules, operational commands, and energy data are managed remotely through a secure cloud platform.",
+                    "The solution supports automated and manual operation, zone-based control, real-time monitoring, and detailed reporting. Integrated asset management and maintenance tools help teams track equipment health and perform preventive maintenance efficiently.",
+                    "This end-to-end smart lighting platform enhances operational efficiency, reduces energy consumption, improves asset lifespan, and enables sustainable community management."
                 ],
                 subItems: [
-                    { title: "Motion & Light Sensors", desc: "LoRaWAN wireless sensors detecting motion (PIR) and ambient light levels, triggering intelligent lighting control based on occupancy and daylight availability." },
-                    { title: "Smart Switches/Relays", desc: "M-Bus and LoRaWAN smart switches (TKN2101C compact) for remote on/off control of street lights, supporting 230VAC loads with relay feedback monitoring." },
-                    { title: "Edge Controllers", desc: "Local intelligence for lighting logic, scheduling algorithms, and autonomous operation even during network outages, with HTTPS cloud synchronization." },
-                    { title: "Cloud Platform", desc: "Centralized monitoring and control dashboard for citywide lighting management, energy consumption tracking, fault detection, and maintenance scheduling." }
-                ],
-                features: [
-                    "Motion-based activation (PIR sensors)",
-                    "Daylight harvesting (ambient light sensing)",
-                    "Remote on/off control via cloud dashboard",
-                    "Automated dimming schedules",
-                    "60-80% energy savings",
-                    "LoRaWAN wireless connectivity",
-                    "Real-time energy consumption monitoring",
-                    "Fault detection and maintenance alerts",
-                    "Extended lamp life (reduced operating hours)",
-                    "Scalable architecture (1000+ lights per network)"
+                    {
+                        title: "Centralized Cloud-Based Control",
+                        desc: "At the heart of the solution lies ConnectME’s secure cloud platform. All street lighting schedules are configured centrally for the entire year and seamlessly pushed to UCONNECT EDGE devices installed in feeder panels. Operators can manage thousands of lighting points from a single dashboard, eliminating the need for manual intervention on-site.",
+                        keyFeatures: [
+                            "Automatic ON/OFF operation based on predefined schedules",
+                            "Remote configuration and updates",
+                            "Real-time system visibility",
+                            "Centralized command execution"
+                        ]
+                    },
+                    {
+                        title: "Intelligent Automation with Manual Flexibility",
+                        desc: "The platform supports both AUTO and Manual modes, ensuring flexibility for different operational scenarios. Lighting systems can be grouped into zones based on location, usage, or priority. The operations team can remotely switch lights ON/OFF, modify schedules, or override automation whenever required, especially during special events, emergencies, or maintenance activities."
+                    },
+                    {
+                        title: "Real-Time Energy Monitoring & Optimization",
+                        desc: "Each feeder panel is continuously monitored for energy consumption and operational status. This helps community management teams optimize energy usage, reduce operational costs, and meet sustainability goals.",
+                        keyFeatures: [
+                            "Real-time energy data",
+                            "Historical consumption analysis",
+                            "Performance comparison across zones",
+                            "Loss and inefficiency detection"
+                        ]
+                    },
+                    {
+                        title: "Integrated Maintenance & Asset Management",
+                        desc: "Maintenance teams use the platform to manage assets and perform preventive maintenance efficiently. With digital asset management, teams can proactively address issues before failures occur, extending the lifespan of lighting infrastructure.",
+                        keyFeatures: [
+                            "Equipment status",
+                            "Maintenance history",
+                            "Fault logs",
+                            "Asset lifecycle data"
+                        ]
+                    },
+                    {
+                        title: "Automated Reporting & Fault Management",
+                        desc: "The cloud engine automatically generates reports and analytics. Any abnormal conditions such as power trips, overloads, communication failures, or device faults are instantly detected and recorded.",
+                        keyFeatures: [
+                            "Daily, weekly, and monthly reports",
+                            "Energy consumption summaries",
+                            "Trip and error logs",
+                            "Performance analytics"
+                        ]
+                    },
+                    {
+                        title: "Instant Alerts via WhatsApp Integration",
+                        desc: "To ensure rapid response, ConnectME has integrated automated WhatsApp notifications into the system. Dedicated groups are created for maintenance teams, operators, and community managers. Whenever an abnormal event occurs, the EDGE controllers automatically trigger alerts.",
+                        keyFeatures: [
+                            "Faster issue resolution",
+                            "Reduced downtime",
+                            "Improved coordination",
+                            "Better service reliability"
+                        ]
+                    },
+                    {
+                        title: "Powerful UCONNECT EDGE Gateway",
+                        desc: "The solution is powered by the UCONNECT EDGE gateway, a robust industrial-grade controller designed for smart infrastructure management. This ensures seamless interoperability with existing systems, sensors, and third-party platforms.",
+                        keyFeatures: [
+                            "Multi-port connectivity",
+                            "Multi-protocol support",
+                            "MQTT, HTTPS, and FTP communication",
+                            "LoRaWAN forwarder gateway capability",
+                            "Modbus and BACnet integration"
+                        ]
+                    }
                 ],
                 benefits: [
-                    "Significant energy cost reduction (60-80%)",
-                    "Reduced carbon footprint and sustainability",
-                    "Lower maintenance costs",
-                    "Extended lamp and fixture lifespan",
-                    "Improved safety through intelligent lighting",
-                    "Real-time monitoring and fault detection",
-                    "Flexible scheduling and control",
-                    "Quick ROI (typically 2-3 years)"
+                    "Improve operational efficiency",
+                    "Reduce energy consumption",
+                    "Enhance asset visibility",
+                    "Enable data-driven decisions",
+                    "Achieve sustainability targets",
+                    "Transform conventional lighting into smart infrastructure"
+                ],
+                conclusion: "ConnectME’s smart street lighting platform demonstrates how modern IoT and cloud technologies can revolutionize urban infrastructure management. With centralized control, intelligent automation, real-time monitoring, and integrated maintenance workflows, communities can now manage their lighting systems more effectively than ever before. As smart cities continue to evolve, solutions like these play a vital role in building safer, greener, and more efficient living environments.",
+                softwareDashboard: [
+                    streetLightDash1, streetLightDash2, streetLightDash3
                 ]
             },
             {
@@ -351,7 +481,11 @@ const serviceData = [
                     "Contribution to sustainability and carbon reduction goals",
                     "Enhanced operational excellence",
                     "Quick ROI through reduced energy consumption"
-                ]
+                ],
+                softwareDashboard: [
+                    hvacDash1, hvacDash2
+                ],
+                conclusion: "By combining edge intelligence with centralized cloud scheduling, Universities achieved a highly efficient, scalable, and intelligent HVAC automation system. The solution demonstrates how smart campus technologies can directly contribute to sustainability goals while enhancing operational excellence."
             }
         ]
     },

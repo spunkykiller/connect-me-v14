@@ -207,11 +207,10 @@ export default function AboutPage() {
                         <h3 className="founder-name">MOHAMED NASIM V.M</h3>
                         <p className="founder-role">SALES DIRECTOR- KSA</p>
                         <ul className="founder-list">
-                            <li>18+ years experience in metering, software development, and IoT hardware.</li>
-                            <li>Expert in billing software (IBM), AMR solutions, and smart valve technology.</li>
-                            <li>Founder of TECHKNAVE and co-founded CONNECTME in 2022.</li>
-                            <li>Specializes in metering & BMS protocols for new smart metering verticals.</li>
-                            <li>Expertise: Innovation technologies, Metering & Billing, Embedded systems.</li>
+                            <li>10+ years of experience in BMS, HVAC automation, and industrial control systems across the GCC.</li>
+                            <li>Led high-value BMS and energy management projects exceeding QAR 25 million, managing end-to-end execution.</li>
+                            <li>Expertise in HVAC automation, energy metering, and multi-protocol integrations (BACnet, Modbus, SCADA).</li>
+                            <li>Drives regional growth, bridging engineering and commercial strategy for scalable automation solutions.</li>
                         </ul>
                     </div>
                 </div>

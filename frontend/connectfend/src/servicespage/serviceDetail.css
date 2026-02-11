@@ -54,7 +54,6 @@
     margin-top: 40px;
     color: #26AAE3;
     font-size: var(--font-body-sm);
-    /* Was 16px */
 }
 
 /* ======================================================
@@ -87,7 +86,7 @@
 }
 
 .monitor-desc {
-    font-size: 14px;
+    font-size: var(--font-caption);
     opacity: 0.9;
     line-height: 1.4;
 }
@@ -141,7 +140,7 @@
 }
 
 .how-desc {
-    font-size: 14px;
+    font-size: var(--font-caption);
     color: #666;
     line-height: 1.5;
 }
@@ -182,7 +181,7 @@
 }
 
 .where-benefit {
-    font-size: 14px;
+    font-size: var(--font-caption);
     color: #666;
     line-height: 1.4;
 }
@@ -352,7 +351,7 @@
 }
 
 .sub-item-list li {
-    font-size: 13px;
+    font-size: var(--font-caption);
     color: #555;
     padding: 4px 0;
     padding-left: 15px;
@@ -382,7 +381,7 @@
    CONCLUSION SECTION
 ===================================================== */
 .conclusion-text {
-    font-size: 18px;
+    font-size: var(--font-body);
     line-height: 1.6;
     color: var(--color-text-body);
     font-weight: 500;
@@ -409,7 +408,7 @@
     padding: 15px 20px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font-body-sm);
     text-transform: uppercase;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     /* Lighter shadow */
@@ -451,14 +450,7 @@
     margin-bottom: 30px;
 }
 
-.solutions-for-section .section-title {
-    color: var(--color-text-heading);
-    /* Default heading color */
-    border-bottom: none;
-    /* Removed border */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
+
 
 .solutions-for-list {
     list-style: none;
