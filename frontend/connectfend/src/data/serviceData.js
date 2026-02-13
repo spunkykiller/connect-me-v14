@@ -53,11 +53,14 @@ import hvacDash1 from "../assets/Intelligent HVAC Automated Scheduling Dashboard
 import hvacDash2 from "../assets/Intelligent HVAC Automated Scheduling Dashboard Images/Intelligent HVAC Automated Scheduling Dashboard Images_2.png";
 
 
+import intelligentHVACImg from "../assets/Intelligent HVAC Automated Scheduling.png";
+
 const serviceData = [
     {
         category: "Solutions",
         slug: "solutions",
         items: [
+            // ... (omitted items)
             {
                 id: "utility-billing-metering",
                 name: "Utility Billing and Metering",
@@ -451,7 +454,7 @@ const serviceData = [
                 id: "intelligent-hvac",
                 name: "Intelligent HVAC Automated Scheduling",
                 description: "Smart Classroom HVAC Automation enables universities to automatically control classroom air-conditioning based on academic schedules using the UCONNECT-EDGE on-premise gateway.",
-                heroImage: utilityImg,
+                heroImage: intelligentHVACImg,
                 content: [
                     "Smart Classroom HVAC Automation enables universities to automatically control classroom air-conditioning based on academic schedules. Using the UCONNECT-EDGE on-premise gateway, classroom allocations synced from the cloud are translated into real-time BACnet / Modbus commands to FAHUs and HVAC systems.",
                     "The solution ensures that AC systems are switched ON/OFF and thermostats set to optimal temperatures only during allocated class hours, reducing energy wastage while maintaining occupant comfort. A centralized cloud platform provides visibility into live HVAC operational status across multiple campuses, while edge intelligence ensures reliable, low-latency control even during network disruptions.",
