@@ -55,6 +55,8 @@ import hvacDash2 from "../assets/Intelligent HVAC Automated Scheduling Dashboard
 
 import intelligentHVACImg from "../assets/Intelligent HVAC Automated Scheduling.png";
 import multiLevelAlertImg from "../assets/Multi-Level Alert & Notification System.jpeg";
+import locationBasedLeakImg from "../assets/Location-Based Leak Detection (5-Wire Rope Cable).png";
+import nonLocationLeakImg from "../assets/Non-Location Leak Detection (2-Wire Rope Cable).png";
 
 const serviceData = [
     {
@@ -301,6 +303,7 @@ const serviceData = [
 
                     {
                         title: "Location-Based Leak Detection (5-Wire Rope Cable)",
+                        img: locationBasedLeakImg,
                         desc: "This advanced system uses a 5-wire sensing cable (Two sensing wires, One reference wire, Power wires, Communication wires). When water touches the cable, resistance changes between the sensing wires. The controller analyzes this variation to calculate the exact distance of the leak.",
                         technicalHighlights: [
                             "MODBUS RS485 communication interface",
@@ -319,6 +322,7 @@ const serviceData = [
                     },
                     {
                         title: "Non-Location Leak Detection (2-Wire Rope Cable)",
+                        img: nonLocationLeakImg,
                         desc: "This system detects water presence in a defined zone without pinpointing the exact location. It uses a 2-wire rope cable connected to a controller that provides NO/NC dry contact outputs when water is detected.",
                         technicalHighlights: [
                             "Zone-based leak detection",
