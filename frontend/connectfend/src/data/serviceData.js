@@ -298,7 +298,14 @@ const serviceData = [
                     {
                         title: "Integrated Monitoring via UCONNECT EDGE Gateway",
                         img: integratedMonitoring,
-                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
+                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration.",
+                        keyFeatures: [
+                            "Centralized data aggregation for all wired and wireless leak signals",
+                            "Real-time leak detection and processing",
+                            "Instant alerts and notifications",
+                            "Remote access and web-based monitoring capability",
+                            "Secure and reliable communication hub"
+                        ]
                     },
 
                     {
