@@ -61,7 +61,7 @@ export default function ServiceDetail() {
         if (service && service.heroImages && service.heroImages.length > 1) {
             const interval = setInterval(() => {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % service.heroImages.length);
-            }, 5000);
+            }, 3000);
             return () => clearInterval(interval);
         }
     }, [service]);
@@ -272,11 +272,11 @@ export default function ServiceDetail() {
                 {service.whatWeMonitor && (
                     <section className="pd-section">
                         <h2 className="section-title">What We Monitor</h2>
-                        <div className="monitor-grid">
+                        <div className="where-grid">
                             {service.whatWeMonitor.map((item, i) => (
-                                <div key={i} className="monitor-card">
-                                    <h3 className="monitor-param">{item.param}</h3>
-                                    <p className="monitor-desc">{item.desc}</p>
+                                <div key={i} className="where-card">
+                                    <h3 className="where-location">{item.param}</h3>
+                                    <p className="where-benefit">{item.desc}</p>
                                 </div>
                             ))}
                         </div>

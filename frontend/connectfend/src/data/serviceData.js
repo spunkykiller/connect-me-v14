@@ -15,6 +15,22 @@ import networkSecurityDiagram from "../assets/network_security_diagram.png";
 import utilityBillingDiagram from "../assets/utility_billing_diagram.png";
 import leakDetectionDiagram from "../assets/leak_detection_diagram.png";
 import aqiImage2 from "../assets/AQI_image_2.png";
+import ubillLogo from "../assets/Ubill_logo.png";
+import tosiboxKey from "../assets/Tosibox_Key.png";
+import tosiboxLock from "../assets/Tosibox Lock – Secure Remote Access Endpoint.png";
+import tosiboxHub from "../assets/Tosibox HUB – Central Access Gateway.png";
+import advancedRemoteMonitoring from "../assets/Advanced Remote Monitoring & Secure Data Communication.jpg";
+import tosiboxControl from "../assets/Tosibox Control – Central Management Platform.jpg";
+
+import wiredLeak from "../assets/Wired Leak Detection System.png";
+import wirelessLeak from "../assets/Wireless Water Leak Dectector.jpg";
+import integratedMonitoring from "../assets/Integrated Monitoring via UCONNECT EDGE Gateway.png";
+import utilityMaintenanceImg from "../assets/Utility Meter Maintenance_service_1.png";
+import billingManagedServiceImg from "../assets/Billing Managed Service_1.png";
+import amcTrainingImg from "../assets/AMC & Training_1.png";
+import technicalConsultancyImg from "../assets/Technical Consultancy_1.png";
+import plcServicesImg from "../assets/PLC & SCADA Services_1.png";
+import developmentServicesImg from "../assets/Development & Services_1.png";
 
 // Dashboard Images
 import img77 from "../utilitybillingmetering/img77.jpg";
@@ -47,6 +63,7 @@ const serviceData = [
                 name: "Utility Billing and Metering",
                 description: "Complete end-to-end utility metering and billing ecosystem combining precision hardware (UFLO ultrasonic meters, GIMA electromagnetic meters) with UBILL software platform for automated reading, multi-utility billing, and valve control management.",
                 heroImage: utilityBillingDiagram,
+                heroImages: [utilityBillingDiagram, ubillLogo],
                 content: [
                     "ConnectME delivers a comprehensive utility billing and metering solution trusted across 800+ buildings, connecting 500,000+ meters for 120+ customers across the GCC. Our ecosystem combines precision metering hardware with intelligent software platforms to automate the entire billing cycle.",
                     "The solution integrates UFLO ultrasonic BTU/water meters (U60 Advanced, U50 Compact, U40 series), GIMA electromagnetic flow meters (GIMA-B, GIMA-H, GIMA-IB), and TKN clamp-on meters with our UBILL software suite for complete automation from meter reading to payment collection."
@@ -91,6 +108,7 @@ const serviceData = [
                 subItems: [
                     {
                         title: "Tosibox Lock – Secure Remote Access Endpoint",
+                        img: tosiboxLock,
                         desc: "The Tosibox Lock is an industrial-grade secure connectivity device installed at remote sites, control panels, substations, and equipment rooms. It acts as a protected endpoint for encrypted remote access.",
                         technicalHighlights: [
                             "Industrial-grade Design: Rugged, fanless, and built for harsh environments",
@@ -109,6 +127,7 @@ const serviceData = [
                     },
                     {
                         title: "Tosibox Key – Secure Authentication Device",
+                        img: tosiboxKey,
                         desc: "TOSI Key® is an intelligent USB-based authentication device that enables secure remote access to networks and devices connected behind one or more TOSI Locks. It contains a secure crypto processor that manages encrypted credentials and automatically establishes secure VPN connections.",
                         keyFeatures: [
                             "Physical USB Keys",
@@ -124,6 +143,7 @@ const serviceData = [
                     },
                     {
                         title: "Tosibox HUB – Central Access Gateway",
+                        img: tosiboxHub,
                         desc: "A centralized platform for managing all Locks, Keys, and access permissions. The HUB allows drag-and-drop configuration of access groups, streamlined onboarding of network nodes, and easy segmentation of devices.",
                         keyFeatures: [
                             "Aggregates multiple Locks",
@@ -135,6 +155,7 @@ const serviceData = [
                     },
                     {
                         title: "Tosibox Control – Central Management Platform",
+                        img: tosiboxControl,
                         desc: "A cloud-based management layer that provides centralized control, visibility, and auditing of all connected devices and remote access activity across distributed infrastructure.",
                         keyFeatures: [
                             "User and device management",
@@ -146,6 +167,7 @@ const serviceData = [
                     },
                     {
                         title: "Secure Remote Site Monitoring & Data Collection",
+                        img: advancedRemoteMonitoring,
                         desc: "ConnectME utilizes Tosibox Locks and Keys to enable secure monitoring and data collection from distributed and unmanned sites. Each site is securely connected to headquarters through encrypted VPN tunnels.",
                         keyFeatures: [
                             "Utility substations",
@@ -256,6 +278,7 @@ const serviceData = [
                 subItems: [
                     {
                         title: "Wireless Leak Detection System (LoRaWAN-Based)",
+                        img: wirelessLeak,
                         desc: "ConnectME’s wireless leak detection solution is built on LoRaWAN-enabled battery-powered sensors with rope-type sensing cables. These sensors are deployed across critical areas such as basements, pump rooms, HVAC zones, and pipe networks. When water comes in contact with the rope, the sensor instantly detects moisture and transmits the alert through a private LoRaWAN network to the UCONNECT EDGE gateway.",
                         keyFeatures: [
                             "Battery-operated wireless sensors",
@@ -267,7 +290,13 @@ const serviceData = [
                         ]
                     },
                     {
+                        title: "Integrated Monitoring via UCONNECT EDGE Gateway",
+                        img: integratedMonitoring,
+                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
+                    },
+                    {
                         title: "Wired Leak Detection System",
+                        img: wiredLeak,
                         desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies."
                     },
                     {
@@ -306,10 +335,6 @@ const serviceData = [
                         ]
                     },
                     {
-                        title: "Integrated Monitoring via UCONNECT EDGE Gateway",
-                        desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
-                    },
-                    {
                         title: "Multi-Level Alert & Notification System",
                         desc: "From the UCONNECT EDGE gateway, alerts are delivered through multiple channels:",
                         multiLevelAlerts: [
@@ -319,16 +344,7 @@ const serviceData = [
                             { type: "4️⃣ Mobile Notifications", points: ["WhatsApp alerts", "SMS notifications", "Email reports", "Direct alerts to FM and maintenance teams"] }
                         ]
                     },
-                    {
-                        title: "Smart Valve Integration (Optional)",
-                        desc: "When integrated with ConnectME Smart Valves, the leak detection system can automatically shut off water supply upon detecting major leaks. Smart valve integration enables fully automated water protection.",
-                        keyBenefits: [
-                            "Prevents large-scale flooding",
-                            "Prevents structural damage",
-                            "Prevents equipment failure",
-                            "Prevents operational disruption"
-                        ]
-                    }
+
                 ],
                 benefits: [
                     "Early leak detection and prevention",
@@ -497,7 +513,7 @@ const serviceData = [
                 id: "utility-maintenance",
                 name: "Utility Meter Maintenance",
                 description: "Ensuring meters stay healthy for accurate billing. Includes AI-enabled AMR validation and faulty meter replacements.",
-                heroImage: utilityImg,
+                heroImage: utilityMaintenanceImg,
                 content: [
                     "A tenant metering provides the overview and insights needed for accurate billing of water and energy consumption. Highly accurate and reliable meters combined with intuitive meter reading, correct billing platform and proper validation.",
                     "ConnectME offers meter maintenance service to ensure meters stay healthy, critical for correct billing. We do maintenance service on faulty meters replacements."
@@ -507,7 +523,7 @@ const serviceData = [
                 id: "billing",
                 name: "Billing Managed Service",
                 description: "End-to-end billing management, from data grouping and invoice generation to payment portal and collection services.",
-                heroImage: bill,
+                heroImage: billingManagedServiceImg,
                 content: [
                     "Our payment portal allows residents to download bills and check their account from the comfort of their own home. Billing system is a combination of software and hardware that receives service usage information.",
                     "Collection is the process of chasing past due receivables on customer account. This usually involves sending notifications to the customer and taking appropriate actions in absence of due payments."
@@ -517,7 +533,7 @@ const serviceData = [
                 id: "amc",
                 name: "AMC & Training",
                 description: "Comprehensive Annual Maintenance Contract and professional training services for metering, billing, PLC, SCADA, and automation systems.",
-                heroImage: amc,
+                heroImage: amcTrainingImg,
                 content: [
                     "ConnectME provides comprehensive Annual Maintenance Contract (AMC) and professional training services for metering, billing, PLC, SCADA, and automation systems supplied and implemented by us. Our AMC services ensure continuous system performance through preventive maintenance, regular inspections, software updates, and rapid fault resolution. We support both hardware and software platforms to maximize system reliability and operational uptime.",
                     "In addition, ConnectME delivers structured technical training programs for operators, engineers, and maintenance teams, enabling effective system operation and troubleshooting. Our hands-on training covers system configuration, monitoring, reporting, and best practices. With dedicated support teams and domain expertise, we help clients achieve long-term efficiency, compliance, and return on investment from their automation and monitoring solutions."
@@ -527,7 +543,7 @@ const serviceData = [
                 id: "consultancy",
                 name: "Technical Consultancy",
                 description: "Expert consultancy for IoT protocols, Plant Optimization, Networking & Security.",
-                heroImage: consult,
+                heroImage: technicalConsultancyImg,
                 content: [
                     "Specialized focusing on everything from market research and strategy consulting to hardware and software specialists to help navigate the minefield of IoT protocols.",
                     "We offer: Plant Optimization, Networking & Security, Audit trails, IoT enablement."
@@ -537,7 +553,7 @@ const serviceData = [
                 id: "plc",
                 name: "PLC & SCADA Services",
                 description: "Control systems and automation services for industrial processes.",
-                heroImage: plc,
+                heroImage: plcServicesImg,
                 features: [
                     "Plant / machine upgrade – retrofits",
                     "PLC / SCADA / HMI – modifications",
@@ -550,7 +566,7 @@ const serviceData = [
                 id: "development",
                 name: "Development & Services",
                 description: "Custom Web, Mobile, and Desktop Application Development.",
-                heroImage: dev,
+                heroImage: developmentServicesImg,
                 content: [
                     "Application development services allow you to build consumer-facing apps for a range of digital platforms like mobile App, web, desktop.",
                     "We rely on our technological expertise and specialized industry experience to develop any type of web, mobile App, desktop, and hybrid app per your business requirements."

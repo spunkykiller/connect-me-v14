@@ -169,17 +169,11 @@ export default function Header() {
             )}
           </li>
 
-          {/* SERVICES DROPDOWN */}
+          {/* SERVICES LINK (Direct) */}
           <li>
-            <span
-              className="nav-link"
-              onClick={(e) => toggleDropdown("services", e)}
-            >
+            <Link to="/services" className="nav-link" onClick={handleMenuClick}>
               Services
-            </span>
-            {openDropdown === "services" && (
-              <ServicesDropdown onClose={handleMenuClick} specificCategory="Services" />
-            )}
+            </Link>
           </li>
 
           <li><Link to="/work" onClick={handleMenuClick}>Work</Link></li>
@@ -238,21 +232,10 @@ export default function Header() {
             )}
           </div>
 
-          {/* 3. Services (Accordion) */}
-          <div className="mobile-accordion-group">
-            <div
-              className={`mobile-main-item ${activeMobileSection === "services" ? "active" : ""}`}
-              onClick={() => toggleMobileSection("services")}
-            >
-              <span>Services</span>
-              {activeMobileSection === "services" ? <FaChevronUp /> : <FaChevronDown />}
-            </div>
-            {activeMobileSection === "services" && (
-              <div className="mobile-sub-menu-container">
-                {renderMobileServices()}
-              </div>
-            )}
-          </div>
+          {/* 3. Services (Direct Link) */}
+          <Link to="/services" className="mobile-main-item link" onClick={handleMenuClick}>
+            Services
+          </Link>
 
           {/* 4. Work */}
           <Link to="/work" className="mobile-main-item link" onClick={handleMenuClick}>
