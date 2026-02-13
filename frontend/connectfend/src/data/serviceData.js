@@ -54,6 +54,7 @@ import hvacDash2 from "../assets/Intelligent HVAC Automated Scheduling Dashboard
 
 
 import intelligentHVACImg from "../assets/Intelligent HVAC Automated Scheduling.png";
+import multiLevelAlertImg from "../assets/Multi-Level Alert & Notification System.jpeg";
 
 const serviceData = [
     {
@@ -297,11 +298,7 @@ const serviceData = [
                         img: integratedMonitoring,
                         desc: "For both wireless and wired systems, ConnectME employs the UCONNECT EDGE Gateway as the central data aggregation and communication hub. All leak signals are routed to the EDGE gateway for processing, alerting, and system integration."
                     },
-                    {
-                        title: "Wired Leak Detection System",
-                        img: wiredLeak,
-                        desc: "ConnectME’s wired leak detection solution supports both Location-Based and Non-Location-Based sensing technologies."
-                    },
+
                     {
                         title: "Location-Based Leak Detection (5-Wire Rope Cable)",
                         desc: "This advanced system uses a 5-wire sensing cable (Two sensing wires, One reference wire, Power wires, Communication wires). When water touches the cable, resistance changes between the sensing wires. The controller analyzes this variation to calculate the exact distance of the leak.",
@@ -339,6 +336,7 @@ const serviceData = [
                     },
                     {
                         title: "Multi-Level Alert & Notification System",
+                        img: multiLevelAlertImg,
                         desc: "From the UCONNECT EDGE gateway, alerts are delivered through multiple channels:",
                         multiLevelAlerts: [
                             { type: "1️⃣ Local Alarm System", points: ["Hooter and siren alerts", "Reset and acknowledgment support", "Immediate on-site indication"] },
