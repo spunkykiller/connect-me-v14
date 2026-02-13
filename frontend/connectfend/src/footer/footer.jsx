@@ -60,50 +60,51 @@ export default function Footer() {
 
                     <div className="contact-group">
                         <h5 className="sub-heading">INDIA</h5>
-                        NO. 208, Double Road,<br />
-                        BTM Layout 2nd Stage,<br />
-                        Bengaluru, Karnataka,<br />
-                        India - 560076
-                    </p>
-                    <p>☎ +971 56 2250600</p>
-                    <p>✉ sales@connectme.biz</p>
+                        <p>
+                            NO. 208, Double Road,<br />
+                            BTM Layout 2nd Stage,<br />
+                            Bengaluru, Karnataka,<br />
+                            India - 560076
+                        </p>
+                        <p>☎ +971 56 2250600</p>
+                        <p>✉ sales@connectme.biz</p>
+                    </div>
+
+
                 </div>
 
+                {/* COLUMN 4: REGIONAL OFFICES */}
+                <div className="footer-col">
+                    <h4 className="footer-heading">REGIONAL OFFICES</h4>
 
+                    <div className="contact-group">
+                        <h5 className="sub-heading">SAUDI ARABIA</h5>
+                        <p>
+                            Building No: 12, Al Hawari<br />
+                            Street, Al Malaz District<br />
+                            Riyadh, Saudi Arabia
+                        </p>
+                        <p>☎ +966 50 916 4160</p>
+                        <p>✉ nasim@connectme.biz</p>
+                    </div>
+
+                    <div className="contact-group">
+                        <h5 className="sub-heading">QATAR</h5>
+                        <p>
+                            First Floor, Building 98, Street<br />
+                            220, B-Ring Road, Doha, Qatar
+                        </p>
+                        <p>☎ +971 56 2250600</p>
+                        <p>✉ sales.qat@connectme.biz</p>
+                    </div>
+
+                    <div className="contact-group">
+                        <h5 className="sub-heading">INTERNATIONAL SALES INQUIRY</h5>
+                        <p>☎ +971 56 2250600</p>
+                        <p>✉ sales@connectme.biz</p>
+                    </div>
+                </div>
             </div>
-
-            {/* COLUMN 4: REGIONAL OFFICES */}
-            <div className="footer-col">
-                <h4 className="footer-heading">REGIONAL OFFICES</h4>
-
-                <div className="contact-group">
-                    <h5 className="sub-heading">SAUDI ARABIA</h5>
-                    <p>
-                        Building No: 12, Al Hawari<br />
-                        Street, Al Malaz District<br />
-                        Riyadh, Saudi Arabia
-                    </p>
-                    <p>☎ +966 50 916 4160</p>
-                    <p>✉ nasim@connectme.biz</p>
-                </div>
-
-                <div className="contact-group">
-                    <h5 className="sub-heading">QATAR</h5>
-                    <p>
-                        First Floor, Building 98, Street<br />
-                        220, B-Ring Road, Doha, Qatar
-                    </p>
-                    <p>☎ +971 56 2250600</p>
-                    <p>✉ sales.qat@connectme.biz</p>
-                </div>
-
-                <div className="contact-group">
-                    <h5 className="sub-heading">INTERNATIONAL SALES INQUIRY</h5>
-                    <p>☎ +971 56 2250600</p>
-                    <p>✉ sales@connectme.biz</p>
-                </div>
-            </div>
-        </div>
         </footer >
     );
 }
