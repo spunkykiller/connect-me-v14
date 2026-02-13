@@ -205,7 +205,7 @@ export default function ServiceDetail() {
                                 <div key={i} className="sub-item-card">
                                     {sub.img && (
                                         <div className="sub-item-image-container">
-                                            <img src={sub.img} alt={sub.title} className="sub-item-image" />
+                                            <img src={sub.img} alt={sub.title} className={`sub-item-image ${sub.imgClass || ""}`} />
                                         </div>
                                     )}
                                     <h3 className="sub-item-title">{sub.title}</h3>

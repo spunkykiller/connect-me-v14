@@ -304,6 +304,7 @@ const serviceData = [
                     {
                         title: "Location-Based Leak Detection (5-Wire Rope Cable)",
                         img: locationBasedLeakImg,
+                        imgClass: "large-img",
                         desc: "This advanced system uses a 5-wire sensing cable (Two sensing wires, One reference wire, Power wires, Communication wires). When water touches the cable, resistance changes between the sensing wires. The controller analyzes this variation to calculate the exact distance of the leak.",
                         technicalHighlights: [
                             "MODBUS RS485 communication interface",

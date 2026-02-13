@@ -330,6 +330,14 @@
     border-radius: 6px;
 }
 
+.sub-item-image.large-img {
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    /* Removed scale to prevent overlap, increased max-height */
+}
+
 .sub-item-list-container {
     margin-top: 15px;
     padding-top: 15px;
