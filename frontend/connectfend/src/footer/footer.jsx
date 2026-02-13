@@ -58,10 +58,13 @@ export default function Footer() {
                         <p>✉ info@connectme.biz</p>
                     </div>
 
+
+                    <h4 className="footer-heading">REGIONAL OFFICES</h4>
+
                     <div className="contact-group">
                         <h5 className="sub-heading">INDIA</h5>
                         <p>
-                            NO. 208, Double Road,<br />
+                            No: 208, Double Road,<br />
                             BTM Layout 2nd Stage,<br />
                             Bengaluru, Karnataka,<br />
                             India - 560076
